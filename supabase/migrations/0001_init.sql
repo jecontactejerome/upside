@@ -126,22 +126,32 @@ create index if not exists news_published_idx on news_articles (published_at des
 create index if not exists news_security_idx on news_articles (security_id, published_at desc);
 
 -- ============================================================
---  daily_digest — le brief du jour en 5 points
+--  weekly_digest — le brief de la semaine en 5 points (onglet News)
 -- ============================================================
-create table if not exists daily_digest (
-  d            date primary key,
+create table if not exists weekly_digest (
+  week_start   date primary key,     -- lundi de la semaine concernée
   bullets      jsonb not null,       -- [{ "title": "...", "detail": "..." }, x5]
   generated_by digest_src_t not null,
   created_at   timestamptz not null default now()
 );
 
 -- ============================================================
---  watchlist — favoris de l'utilisateur
+--  watchlist — favoris "à surveiller" (onglet Growth)
 -- ============================================================
 create table if not exists watchlist (
   user_id      uuid not null references auth.users(id) on delete cascade,
   security_id  uuid not null references securities(id) on delete cascade,
   note         text,
+  created_at   timestamptz not null default now(),
+  primary key (user_id, security_id)
+);
+
+-- ============================================================
+--  holdings — actions réellement détenues (onglet Track)
+-- ============================================================
+create table if not exists holdings (
+  user_id      uuid not null references auth.users(id) on delete cascade,
+  security_id  uuid not null references securities(id) on delete cascade,
   created_at   timestamptz not null default now(),
   primary key (user_id, security_id)
 );
@@ -192,8 +202,9 @@ alter table price_targets     enable row level security;
 alter table target_revisions  enable row level security;
 alter table growth_scores     enable row level security;
 alter table news_articles     enable row level security;
-alter table daily_digest      enable row level security;
+alter table weekly_digest     enable row level security;
 alter table watchlist         enable row level security;
+alter table holdings          enable row level security;
 
 -- Données marché : lecture publique (anon + authenticated). Aucune écriture via API publique.
 do $$
@@ -201,7 +212,7 @@ declare t text;
 begin
   foreach t in array array[
     'securities','quotes','price_history','price_targets',
-    'target_revisions','growth_scores','news_articles','daily_digest'
+    'target_revisions','growth_scores','news_articles','weekly_digest'
   ]
   loop
     execute format(
@@ -218,6 +229,19 @@ create policy "own_watchlist_select" on watchlist for select
 
 drop policy if exists "own_watchlist_write" on watchlist;
 create policy "own_watchlist_write" on watchlist for all
+  using (user_id = auth.uid()
+         and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com')
+  with check (user_id = auth.uid()
+              and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com');
+
+-- Track : mêmes règles que les favoris.
+drop policy if exists "own_holdings_select" on holdings;
+create policy "own_holdings_select" on holdings for select
+  using (user_id = auth.uid()
+         and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com');
+
+drop policy if exists "own_holdings_write" on holdings;
+create policy "own_holdings_write" on holdings for all
   using (user_id = auth.uid()
          and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com')
   with check (user_id = auth.uid()

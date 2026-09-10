@@ -1,8 +1,11 @@
 # Upside
 
-App perso de suivi du **potentiel de croissance boursier** : elle classe les actions
-selon l'écart entre leur cours et l'objectif de cours moyen des analystes, et fait
-remonter l'actu des valeurs les plus « bankable ».
+App perso de suivi du **potentiel de croissance boursier**. 3 onglets :
+
+- **Growth** — classe les actions selon l'écart entre leur cours et l'objectif de cours
+  moyen des analystes ; tri, filtres, favoris (⭐) à surveiller.
+- **Track** — les actions que tu détiens + leur fil d'actualité.
+- **News** — le brief de la semaine en 5 points (généré chaque lundi).
 
 - **Univers v1** : S&P 500 (503) + une sélection STOXX Europe 600 (~194). Extensible.
 - **Coût de fonctionnement : 0 €** (Vercel Hobby + Supabase Free + GitHub Actions sur repo public + API gratuites).
@@ -61,11 +64,11 @@ npm run quotes              # cours
 npm run targets             # objectifs analystes
 npm run score               # calcule growth_scores
 npm run news                # articles des top valeurs
-npm run digest              # brief du jour (Gemini, sinon règles)
+npm run digest              # brief de la semaine (Gemini, sinon règles)
 ```
 
 Vérifs rapides dans Supabase → *Table editor* : `securities` rempli, `growth_scores.score`
-non nul, `daily_digest` a une ligne.
+non nul, `weekly_digest` a une ligne.
 
 ## 5. Front
 
@@ -94,7 +97,7 @@ Les workflows dans `.github/workflows/` tournent tout seuls une fois le repo pou
 | `refresh-quotes` | ~20 min | cours + historique quotidien |
 | `refresh-targets` | 06h / 18h UTC | objectifs analystes + recalcul du score |
 | `refresh-news` | 2 h | articles des 25 meilleures valeurs |
-| `daily-digest` | 06h30 UTC | brief du jour en 5 points |
+| `weekly-digest` | lundi 06h UTC | brief de la semaine en 5 points |
 | `refresh-universe` | 1er du mois | reconstruit la liste des valeurs |
 | `keep-alive` | 3 h | évite la mise en pause du projet Supabase |
 

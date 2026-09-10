@@ -1,7 +1,7 @@
-name: daily-digest
+name: weekly-digest
 on:
   schedule:
-    - cron: '30 6 * * *'       # 06h30 UTC
+    - cron: '0 6 * * 1'       # lundi 06h UTC — brief de la semaine
   workflow_dispatch:
 
 jobs:

@@ -4,7 +4,8 @@ import {
   DEMO_SECURITIES,
   DEMO_SECTORS,
   DEMO_NEWS,
-  DEMO_DIGEST,
+  DEMO_WEEKLY_DIGEST,
+  demoHoldings,
 } from './demo';
 
 // ---------- Growth ----------
@@ -89,15 +90,62 @@ export async function saveNote(securityId, note) {
   return supabase.from('watchlist').update({ note }).eq('security_id', securityId);
 }
 
-// ---------- News ----------
-export async function fetchTopTickerNews(limit = 60) {
-  if (isDemo()) return DEMO_NEWS.slice(0, limit);
-  const { data: top } = await supabase
-    .from('growth_scores')
-    .select('security_id')
-    .order('score', { ascending: false })
-    .limit(25);
-  const ids = (top ?? []).map((t) => t.security_id);
+// ---------- Track (actions détenues) ----------
+export async function fetchHoldings() {
+  if (isDemo()) {
+    return [...demoHoldings()]
+      .map((id) => DEMO_SECURITIES.find((s) => s.id === id))
+      .filter(Boolean);
+  }
+  const { data, error } = await supabase
+    .from('holdings')
+    .select('security_id, created_at, securities(id, name, symbol_yahoo, exchange, region, currency, sector)')
+    .order('created_at', { ascending: false });
+  if (error) return [];
+  return (data ?? []).map((r) => ({ ...r.securities, added_at: r.created_at }));
+}
+
+export async function searchSecurities(query, limit = 8) {
+  const q = query.trim();
+  if (q.length < 2) return [];
+  if (isDemo()) {
+    const low = q.toLowerCase();
+    return DEMO_SECURITIES.filter(
+      (s) => s.name.toLowerCase().includes(low) || s.symbol_yahoo.toLowerCase().includes(low),
+    ).slice(0, limit);
+  }
+  const { data } = await supabase
+    .from('securities')
+    .select('id, name, symbol_yahoo, exchange, region, currency, sector')
+    .eq('active', true)
+    .or(`name.ilike.%${q}%,symbol_yahoo.ilike.%${q}%`)
+    .limit(limit);
+  return data ?? [];
+}
+
+export async function addHolding(securityId, userId) {
+  if (isDemo()) {
+    demoHoldings().add(securityId);
+    return { error: null };
+  }
+  return supabase.from('holdings').insert({ security_id: securityId, user_id: userId });
+}
+
+export async function removeHolding(securityId) {
+  if (isDemo()) {
+    demoHoldings().delete(securityId);
+    return { error: null };
+  }
+  return supabase.from('holdings').delete().eq('security_id', securityId);
+}
+
+export async function fetchHoldingsNews(limit = 60) {
+  if (isDemo()) {
+    const ids = new Set([...demoHoldings()]);
+    return DEMO_NEWS.filter((n) => ids.has(n.security_id)).slice(0, limit);
+  }
+  const holds = await fetchHoldings();
+  const ids = holds.map((h) => h.id);
   if (!ids.length) return [];
   const { data, error } = await supabase
     .from('news_articles')
@@ -109,12 +157,13 @@ export async function fetchTopTickerNews(limit = 60) {
   return data ?? [];
 }
 
-export async function fetchDigest() {
-  if (isDemo()) return DEMO_DIGEST;
+// ---------- News (brief de la semaine) ----------
+export async function fetchWeeklyDigest() {
+  if (isDemo()) return DEMO_WEEKLY_DIGEST;
   const { data } = await supabase
-    .from('daily_digest')
+    .from('weekly_digest')
     .select('*')
-    .order('d', { ascending: false })
+    .order('week_start', { ascending: false })
     .limit(1)
     .maybeSingle();
   return data ?? null;

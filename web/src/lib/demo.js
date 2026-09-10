@@ -87,14 +87,28 @@ export const DEMO_NEWS = [
   securities: { name: a[3], symbol_yahoo: a[2] },
 }));
 
-export const DEMO_DIGEST = {
-  d: new Date().toISOString().slice(0, 10),
+function mondayOf(d = new Date()) {
+  const x = new Date(d);
+  const day = (x.getDay() + 6) % 7;
+  x.setDate(x.getDate() - day);
+  return x.toISOString().slice(0, 10);
+}
+
+export const DEMO_WEEKLY_DIGEST = {
+  week_start: mondayOf(),
   generated_by: 'gemini',
   bullets: [
-    { title: 'Les semi-conducteurs tirent la cote', detail: 'Nvidia (+2,1 %) et AMD (+3,2 %) profitent d’un regain d’appétit pour l’IA ; les objectifs de cours restent nettement au-dessus des niveaux actuels.' },
-    { title: 'Airbus : plus fort écart au consensus du jour', detail: 'À 196 €, le titre affiche +17,6 % de potentiel vs l’objectif moyen (231 €) sur 23 analystes.' },
+    { title: 'Les semi-conducteurs ont tiré la cote', detail: 'Nvidia et AMD ont progressé sur la semaine, portés par un regain d’appétit pour l’IA ; les objectifs de cours restent nettement au-dessus des niveaux actuels.' },
+    { title: 'Airbus : plus fort écart au consensus', detail: 'À 196 €, le titre affiche +17,6 % de potentiel vs l’objectif moyen (231 €) sur 23 analystes.' },
     { title: 'Santé : Eli Lilly et Novo Nordisk bien orientés', detail: 'Les deux valeurs conservent une recommandation « acheter » et un potentiel supérieur à 20 %.' },
-    { title: 'Énergie sous pression', detail: 'Shell et TotalEnergies reculent légèrement ; le potentiel reste positif mais le momentum des révisions faiblit.' },
+    { title: 'Énergie sous pression', detail: 'Shell et TotalEnergies ont reculé sur la semaine ; le potentiel reste positif mais le momentum des révisions faiblit.' },
     { title: 'Rappel méthode', detail: 'Le score combine écart au consensus, nombre d’analystes, révisions récentes et note moyenne. Ceci n’est pas un conseil en investissement.' },
   ],
 };
+
+// Portefeuille démo (persistant le temps de la session)
+let _holdings = null;
+export function demoHoldings() {
+  if (!_holdings) _holdings = new Set(['demo-5', 'demo-0']); // Nvidia, Airbus
+  return _holdings;
+}

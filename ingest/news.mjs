@@ -1,6 +1,7 @@
-// Alimente `news_articles` pour les valeurs les plus "bankable"
-// (top N par growth_scores.score). Sources : Finnhub company-news + RSS Yahoo.
-// Cadence cible : toutes les 2 h.
+// Alimente `news_articles` pour :
+//   - les valeurs les plus "bankable" (top N par growth_scores.score) -> brief hebdo
+//   - toutes les actions détenues (table holdings)                    -> onglet Track
+// Sources : Finnhub company-news + RSS Yahoo. Cadence cible : toutes les 2 h.
 import { db, upsertBatched } from './lib/supabase.mjs';
 import { companyNews } from './lib/finnhub.mjs';
 import { rssUrlFor } from './lib/yahoo.mjs';
@@ -8,13 +9,24 @@ import { runPool } from './lib/throttle.mjs';
 
 const TOP_N = 25;
 
-const { data: top, error } = await db
+const { data: topScores, error } = await db
   .from('growth_scores')
-  .select('security_id, score, securities!inner(symbol_yahoo, symbol_finnhub)')
+  .select('security_id, securities!inner(symbol_yahoo, symbol_finnhub)')
   .order('score', { ascending: false })
   .limit(TOP_N);
 if (error) throw error;
-console.log(`News : top ${top.length} valeurs`);
+
+const { data: held } = await db
+  .from('holdings')
+  .select('security_id, securities!inner(symbol_yahoo, symbol_finnhub)');
+
+// union top score + actions détenues, dédoublonné par security_id
+const bySecId = new Map();
+for (const r of [...(topScores || []), ...(held || [])]) {
+  if (!bySecId.has(r.security_id)) bySecId.set(r.security_id, r);
+}
+const top = [...bySecId.values()];
+console.log(`News : ${top.length} valeurs (top ${topScores?.length || 0} + ${held?.length || 0} détenues)`);
 
 // --- RSS minimal (pas de dépendance XML) ---
 async function rssItems(symbol) {

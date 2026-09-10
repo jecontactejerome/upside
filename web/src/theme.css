@@ -284,6 +284,79 @@ button { font-family: inherit; }
 .spin { animation: spin 0.9s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
+/* --------- Track : recherche + puces --------- */
+.search-wrap { position: relative; margin-bottom: 4px; }
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 11px 13px;
+}
+.search-field input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+}
+.search-results {
+  position: absolute;
+  left: 0; right: 0;
+  top: calc(100% + 6px);
+  z-index: 30;
+  background: var(--bg);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.search-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 11px 14px;
+  font-size: 13.5px;
+  color: var(--text);
+  cursor: pointer;
+  border-bottom: 1px solid var(--hairline);
+}
+.search-row:last-child { border-bottom: 0; }
+.search-row:hover:not(:disabled) { background: var(--surface); }
+.search-row:disabled { cursor: default; opacity: 0.55; }
+.search-row .muted, .muted { color: var(--text-2); font-weight: 400; }
+
+.hold-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+.hold-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 7px 8px 7px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.hold-chip button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: var(--surface-2);
+  color: var(--text-2);
+  border-radius: 999px;
+  width: 20px; height: 20px;
+  cursor: pointer;
+}
+
 .empty { text-align: center; color: var(--text-2); font-size: 14px; padding: 48px 20px; }
 .disclaimer { font-size: 11px; color: var(--text-2); text-align: center; padding: 20px 24px 8px; line-height: 1.4; }
 

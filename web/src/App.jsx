@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { TabBar } from './components/TabBar.jsx';
 import Growth from './routes/Growth.jsx';
+import Track from './routes/Track.jsx';
 import News from './routes/News.jsx';
 import Login from './routes/Login.jsx';
 import { useAuth } from './lib/useAuth.js';
@@ -25,6 +26,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/growth" replace />} />
         <Route path="/growth" element={<Growth />} />
+        <Route path="/track" element={<Track />} />
         <Route path="/news" element={<News />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/growth" replace />} />

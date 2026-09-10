@@ -1,13 +1,20 @@
-// Génère le "brief du jour en 5 points" -> table daily_digest.
-// 1) tente Gemini Flash (tier gratuit) à partir de données agrégées du jour
+// Génère le "brief de la semaine en 5 points" -> table weekly_digest (onglet News).
+// 1) tente Gemini Flash (tier gratuit) à partir des faits agrégés des 7 derniers jours
 // 2) en cas d'erreur/quota : gabarit déterministe (jamais de brief vide)
-// Cadence cible : 06h30 UTC.
+// Cadence cible : lundi 06h UTC.
 import { db } from './lib/supabase.mjs';
 import { GEMINI_API_KEY } from './lib/env.mjs';
 
-const today = new Date().toISOString().slice(0, 10);
+// lundi de la semaine en cours (UTC), au format YYYY-MM-DD
+function mondayOf(date = new Date()) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const day = (d.getUTCDay() + 6) % 7; // 0 = lundi
+  d.setUTCDate(d.getUTCDate() - day);
+  return d.toISOString().slice(0, 10);
+}
+const weekStart = mondayOf();
 
-// ---------- agrégation des faits du jour ----------
+// ---------- agrégation des faits de la semaine ----------
 const { data: movers } = await db
   .from('growth_feed')
   .select('name, symbol_yahoo, upside_pct, num_analysts, recommendation_key, momentum, score')
@@ -20,16 +27,16 @@ const { data: revisions } = await db
   .order('momentum', { ascending: false })
   .limit(5);
 
-const sinceIso = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
+const sinceIso = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
 const { data: news } = await db
   .from('news_articles')
   .select('headline, source, published_at, securities(name)')
   .gte('published_at', sinceIso)
   .order('published_at', { ascending: false })
-  .limit(20);
+  .limit(40);
 
 const facts = {
-  date: today,
+  semaine_du: weekStart,
   top_potentiel: (movers || []).map((m) => ({
     valeur: m.name,
     ticker: m.symbol_yahoo,
@@ -42,7 +49,7 @@ const facts = {
     ticker: r.symbol_yahoo,
     momentum_pct: pct(r.momentum),
   })),
-  titres_actu: (news || []).map((n) => `${n.headline} (${n.source})`),
+  titres_actu_semaine: (news || []).map((n) => `${n.headline} (${n.source})`),
 };
 
 // ---------- 1) Gemini ----------
@@ -63,13 +70,13 @@ if (GEMINI_API_KEY) {
 if (!bullets) bullets = ruleDigest(facts);
 
 const { error } = await db
-  .from('daily_digest')
-  .upsert({ d: today, bullets, generated_by: generatedBy }, { onConflict: 'd' });
+  .from('weekly_digest')
+  .upsert({ week_start: weekStart, bullets, generated_by: generatedBy }, { onConflict: 'week_start' });
 if (error) {
-  console.error('✗ écriture daily_digest:', error.message);
+  console.error('✗ écriture weekly_digest:', error.message);
   process.exit(1);
 }
-console.log(`✓ daily_digest ${today} — ${bullets.length} points — source: ${generatedBy}`);
+console.log(`✓ weekly_digest semaine du ${weekStart} — ${bullets.length} points — source: ${generatedBy}`);
 process.exit(0);
 
 // ============================================================
@@ -81,7 +88,7 @@ async function geminiDigest(f) {
   const model = 'gemini-1.5-flash';
   const prompt = [
     "Tu es analyste marché. À partir des données JSON ci-dessous, rédige EXACTEMENT 5 points",
-    "clés à connaître aujourd'hui pour investir en bourse (indices S&P 500 et STOXX 600).",
+    "clés retenir de la SEMAINE ÉCOULÉE pour bien investir en bourse (indices S&P 500 et STOXX 600).",
     "Style sobre, factuel, en français, sans conseil personnalisé, sans emoji.",
     'Réponds UNIQUEMENT par un tableau JSON : [{"title":"...","detail":"..."}] (5 éléments,',
     "title <= 60 caractères, detail 1 à 2 phrases).",
@@ -127,13 +134,13 @@ function ruleDigest(f) {
   }
   const names = f.top_potentiel.slice(0, 5).map((x) => x.valeur).join(', ');
   out.push({
-    title: 'Watchlist potentiel du jour',
+    title: 'Valeurs au meilleur potentiel cette semaine',
     detail: `Les 5 valeurs au meilleur score : ${names}.`,
   });
-  if (f.titres_actu.length) {
+  if (f.titres_actu_semaine.length) {
     out.push({
-      title: 'Actu marché à suivre',
-      detail: f.titres_actu.slice(0, 3).join(' · '),
+      title: 'Actu marquante de la semaine',
+      detail: f.titres_actu_semaine.slice(0, 3).join(' · '),
     });
   }
   out.push({
@@ -141,7 +148,7 @@ function ruleDigest(f) {
     detail: "Le score combine écart au consensus, nombre d'analystes, révisions récentes et note moyenne. Ceci n'est pas un conseil en investissement.",
   });
   while (out.length < 5) {
-    out.push({ title: 'Rien de notable', detail: 'Pas d\'élément marquant supplémentaire pour aujourd\'hui.' });
+    out.push({ title: 'Rien de notable', detail: "Pas d'élément marquant supplémentaire cette semaine." });
   }
   return out.slice(0, 5);
 }
