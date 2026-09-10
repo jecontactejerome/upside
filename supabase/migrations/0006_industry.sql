@@ -4,7 +4,9 @@
 alter table securities add column if not exists industry text;
 
 -- La vue Growth doit exposer sector + industry.
-create or replace view growth_feed as
+-- (drop obligatoire : create-or-replace ne sait pas réordonner les colonnes)
+drop view if exists growth_feed;
+create view growth_feed as
 select
   s.id,
   s.symbol_yahoo,
