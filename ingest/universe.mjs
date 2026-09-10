@@ -63,6 +63,7 @@ const toUpsert = universe.map((u) => {
     region: u.region,
     currency: px?.currency || u.currency || 'USD',
     sector: u.sector || null,
+    industry: u.industry || null,
     market_cap: px?.marketCap ?? null,
     index_membership: u.index_membership,
     active: valid.has(u.symbol_yahoo),

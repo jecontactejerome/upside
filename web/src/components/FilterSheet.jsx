@@ -1,7 +1,8 @@
 import { Sheet } from './Sheet.jsx';
 import { SORTS } from '../lib/data.js';
+import { SECTOR_LABELS } from '../lib/sectors.js';
 
-export function FilterSheet({ open, onClose, value, onChange, sectors }) {
+export function FilterSheet({ open, onClose, value, onChange }) {
   const set = (patch) => onChange({ ...value, ...patch });
 
   return (
@@ -39,7 +40,7 @@ export function FilterSheet({ open, onClose, value, onChange, sectors }) {
       <Group title="Secteur">
         <select className="field" value={value.sector ?? ''} onChange={(e) => set({ sector: e.target.value || null })}>
           <option value="">Tous les secteurs</option>
-          {sectors.map((s) => (
+          {SECTOR_LABELS.map((s) => (
             <option key={s} value={s}>{s}</option>
           ))}
         </select>

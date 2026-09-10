@@ -131,6 +131,7 @@ for (const region of REGIONS) {
       region: 'EU',
       currency: q.currency || 'EUR',
       sector: q.sector || null,
+      industry: q.industry || null,
       market_cap: q.marketCap ?? null,
       index_membership: ['EUROPE'],
     });

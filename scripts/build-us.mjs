@@ -51,6 +51,7 @@ for (const [exchange, url] of Object.entries(SOURCES)) {
       region: 'US',
       currency: 'USD',
       sector: r.sector || null,
+      industry: (r.industry || '').trim() || null,
       market_cap: cap,
       index_membership: ['US'],
     });

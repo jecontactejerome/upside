@@ -1,30 +1,33 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { SlidersHorizontal, RefreshCw } from 'lucide-react';
+import { SlidersHorizontal, RefreshCw, Sparkles } from 'lucide-react';
 import { SecurityCard } from '../components/SecurityCard.jsx';
 import { SecuritySheet } from '../components/SecuritySheet.jsx';
 import { FilterSheet } from '../components/FilterSheet.jsx';
-import { fetchGrowth, fetchSectors, fetchHoldings, SORTS } from '../lib/data.js';
+import { fetchGrowth, fetchHoldings, SORTS } from '../lib/data.js';
+import { sectorInfo } from '../lib/sectors.js';
 
 const DEFAULT_FILTERS = {
-  sort: 'score', // classement pondéré (upside x couverture x momentum x note) plutôt que l'upside brut
+  sort: 'upside',
   region: null,
-  sector: null,
-  minAnalysts: 6, // écarte les valeurs trop peu suivies (paris spéculatifs)
+  sector: null, // libellé de bucket (voir lib/sectors.js), filtré côté client
+  minAnalysts: 6,
   hideDownside: true,
 };
+
+// Raccourci "Sélection" : valeurs solides et en dynamique haussière.
+const QUICK = { sort: 'score', minAnalysts: 11, hideDownside: true, momentumPositive: true };
 
 export default function Growth() {
   const [tab, setTab] = useState('all'); // 'all' | 'mine'
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
+  const [quick, setQuick] = useState(false);
   const [rows, setRows] = useState(null);
-  const [sectors, setSectors] = useState([]);
-  const [mineIds, setMineIds] = useState([]); // ids des actions suivies (onglet News)
+  const [mineIds, setMineIds] = useState([]);
   const [filterOpen, setFilterOpen] = useState(false);
   const [selected, setSelected] = useState(null);
   const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
-    fetchSectors().then(setSectors);
     fetchHoldings().then((h) => setMineIds(h.map((x) => x.id)));
   }, []);
 
@@ -32,7 +35,13 @@ export default function Growth() {
     setRefreshing(true);
     try {
       const ids = tab === 'mine' ? mineIds : null;
-      const data = await fetchGrowth({ ...filters, ids });
+      const base = quick
+        ? { ...filters, ...QUICK, sector: filters.sector, region: filters.region }
+        : filters;
+      let data = await fetchGrowth({ ...base, ids });
+      if (filters.sector) {
+        data = data.filter((r) => sectorInfo(r)?.label === filters.sector);
+      }
       setRows(data);
     } catch (e) {
       console.error(e);
@@ -40,7 +49,7 @@ export default function Growth() {
     } finally {
       setRefreshing(false);
     }
-  }, [filters, tab, mineIds]);
+  }, [filters, quick, tab, mineIds]);
 
   useEffect(() => {
     load();
@@ -69,16 +78,31 @@ export default function Growth() {
       </div>
 
       <div className="toolbar">
-        <button className="chip" onClick={() => setFilterOpen(true)}>
+        <button className="chip" onClick={() => setFilterOpen(true)} disabled={quick}>
           <SlidersHorizontal size={15} />
-          {SORTS[filters.sort].label}
-          {activeFilterCount ? ` · ${activeFilterCount}` : ''}
+          {quick ? 'Sélection' : SORTS[filters.sort]?.label || 'Upside %'}
+          {!quick && activeFilterCount ? ` · ${activeFilterCount}` : ''}
+        </button>
+        <button
+          className={`chip icon ${quick ? 'active' : ''}`}
+          onClick={() => setQuick((v) => !v)}
+          aria-pressed={quick}
+          title="Sélection : > 10 analystes et objectif en hausse sur 30 j"
+        >
+          <Sparkles size={15} />
         </button>
         <div style={{ flex: 1 }} />
-        <button className="chip" onClick={load} aria-label="Rafraîchir">
+        <button className="chip icon" onClick={load} aria-label="Rafraîchir">
           <RefreshCw size={15} className={refreshing ? 'spin' : ''} />
         </button>
       </div>
+
+      {quick && (
+        <p className="quick-note">
+          Sélection : plus de 10 analystes et objectif de cours relevé sur les 30 derniers jours,
+          triée par score.
+        </p>
+      )}
 
       {rows === null && <SkeletonList />}
 
@@ -86,19 +110,17 @@ export default function Growth() {
         <p className="empty">
           {tab === 'mine'
             ? 'Aucune de tes actions suivies n’a d’objectif analystes pour l’instant. Ajoute-les dans l’onglet News.'
-            : 'Aucune valeur ne correspond à ces filtres.'}
+            : 'Aucune valeur ne correspond à ces critères.'}
         </p>
       )}
 
-      {rows &&
-        rows.map((row) => <SecurityCard key={row.id} row={row} onOpen={setSelected} />)}
+      {rows && rows.map((row) => <SecurityCard key={row.id} row={row} onOpen={setSelected} />)}
 
       <FilterSheet
         open={filterOpen}
         onClose={() => setFilterOpen(false)}
         value={filters}
         onChange={setFilters}
-        sectors={sectors}
       />
 
       <SecuritySheet row={selected} onClose={() => setSelected(null)} />
@@ -110,7 +132,7 @@ function SkeletonList() {
   return (
     <>
       {Array.from({ length: 6 }).map((_, i) => (
-        <div key={i} className="skeleton" style={{ height: 96, marginBottom: 10 }} />
+        <div key={i} className="skeleton" style={{ height: 104, marginBottom: 10 }} />
       ))}
     </>
   );

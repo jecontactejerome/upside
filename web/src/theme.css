@@ -132,7 +132,19 @@ button { font-family: inherit; }
   color: var(--text);
   cursor: pointer;
 }
-.chip.active { border-color: var(--accent); color: var(--accent); }
+.chip.active { border-color: var(--accent); background: var(--accent); color: #fff; }
+.chip.icon { padding: 7px 9px; }
+.chip:disabled { opacity: 0.45; cursor: default; }
+
+.quick-note {
+  font-size: 12px;
+  color: var(--text-2);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 8px 11px;
+  margin: -4px 0 12px;
+  line-height: 1.35;
+}
 
 /* --------- card --------- */
 .card {
@@ -173,6 +185,26 @@ button { font-family: inherit; }
 }
 .upside-badge.neg { background: var(--down-bg); color: var(--down); }
 .upside-badge small { font-size: 10px; font-weight: 600; opacity: 0.8; }
+
+/* ligne secteur + momentum sous la carte */
+.card-meta { margin-top: 11px; gap: 7px; }
+.sector-chip {
+  font-size: 11px;
+  font-weight: 640;
+  letter-spacing: -0.01em;
+  border-radius: 7px;
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+.mom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px; height: 22px;
+  border-radius: 7px;
+}
+.mom-up { color: var(--up); background: var(--up-bg); }
+.mom-down { color: var(--down); background: var(--down-bg); }
 
 .star {
   border: 0;

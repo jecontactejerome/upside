@@ -2,30 +2,38 @@ import { supabase } from './supabase';
 import {
   isDemo,
   DEMO_SECURITIES,
-  DEMO_SECTORS,
   DEMO_NEWS,
   DEMO_WEEKLY_DIGEST,
   demoHoldings,
 } from './demo';
 
 // ---------- Growth ----------
+// tris proposés dans la feuille "Trier & filtrer"
 export const SORTS = {
   upside: { label: 'Upside %', column: 'upside_pct' },
-  score: { label: 'Score', column: 'score' },
   momentum: { label: 'Momentum', column: 'momentum' },
-  analysts: { label: "Nb d'analystes", column: 'num_analysts' },
   rating: { label: 'Note consensus', column: 'recommendation_mean', ascending: true },
 };
+// colonnes utilisables (inclut 'score', réservé au raccourci "Sélection")
+const SORT_COLS = { ...SORTS, score: { column: 'score' } };
 
-export async function fetchGrowth({ sort = 'upside', region = null, sector = null, minAnalysts = 3, hideDownside = true, ids = null } = {}) {
-  const s = SORTS[sort] || SORTS.upside;
+export async function fetchGrowth({
+  sort = 'upside',
+  region = null,
+  sector = null,
+  minAnalysts = 3,
+  hideDownside = true,
+  momentumPositive = false,
+  ids = null,
+} = {}) {
+  const s = SORT_COLS[sort] || SORT_COLS.upside;
 
   if (isDemo()) {
     let rows = DEMO_SECURITIES.slice();
     if (region) rows = rows.filter((r) => r.region === region);
-    if (sector) rows = rows.filter((r) => r.sector === sector);
     if (minAnalysts) rows = rows.filter((r) => (r.num_analysts ?? 0) >= minAnalysts);
     if (hideDownside) rows = rows.filter((r) => r.upside_pct > 0);
+    if (momentumPositive) rows = rows.filter((r) => (r.momentum ?? 0) > 0);
     if (ids) rows = rows.filter((r) => ids.includes(r.id));
     rows.sort((a, b) => (s.ascending ? a[s.column] - b[s.column] : b[s.column] - a[s.column]));
     return rows;
@@ -33,20 +41,14 @@ export async function fetchGrowth({ sort = 'upside', region = null, sector = nul
 
   let q = supabase.from('growth_feed').select('*');
   if (region) q = q.eq('region', region);
-  if (sector) q = q.eq('sector', sector);
   if (minAnalysts) q = q.gte('num_analysts', minAnalysts);
   if (hideDownside) q = q.gt('upside_pct', 0);
+  if (momentumPositive) q = q.gt('momentum', 0);
   if (ids) q = q.in('id', ids.length ? ids : ['00000000-0000-0000-0000-000000000000']);
   q = q.order(s.column, { ascending: s.ascending ?? false, nullsFirst: false }).limit(300);
   const { data, error } = await q;
   if (error) throw error;
   return data ?? [];
-}
-
-export async function fetchSectors() {
-  if (isDemo()) return DEMO_SECTORS;
-  const { data } = await supabase.from('securities').select('sector').eq('active', true).not('sector', 'is', null);
-  return [...new Set((data ?? []).map((r) => r.sector))].sort();
 }
 
 export async function fetchPriceHistory(securityId, days = 90) {
