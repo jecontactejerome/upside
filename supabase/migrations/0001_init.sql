@@ -8,7 +8,7 @@ create extension if not exists "pgcrypto";      -- gen_random_uuid()
 
 -- ---------- Enums ----------
 do $$ begin
-  create type region_t as enum ('US', 'EU');
+  create type region_t as enum ('US', 'EU', 'OTHER');
 exception when duplicate_object then null; end $$;
 
 do $$ begin

@@ -8,6 +8,7 @@ import {
   fetchHoldingsNews,
   addHolding,
   removeHolding,
+  addTickerViaApi,
 } from '../lib/data.js';
 
 export default function Track() {
@@ -33,6 +34,12 @@ export default function Track() {
   async function add(sec) {
     setHoldings((h) => [{ ...sec, added_at: new Date().toISOString() }, ...(h ?? [])]);
     await addHolding(sec.id);
+    reloadNews();
+  }
+
+  async function addByTicker(symbol) {
+    const sec = await addTickerViaApi(symbol); // lève en cas d'échec
+    setHoldings((h) => [{ ...sec, added_at: new Date().toISOString() }, ...(h ?? [])]);
     reloadNews();
   }
 
@@ -83,7 +90,7 @@ export default function Track() {
           {count} suivie{count > 1 ? 's' : ''} · recherche dans le S&amp;P 500 et le STOXX 600
         </p>
 
-        <AddSearch heldIds={heldIds} onAdd={add} autoFocus />
+        <AddSearch heldIds={heldIds} onAdd={add} onAddByTicker={addByTicker} autoFocus />
 
         <div className="manage-list">
           {(holdings ?? []).length === 0 && (

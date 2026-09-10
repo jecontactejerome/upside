@@ -139,6 +139,18 @@ export async function removeHolding(securityId) {
   return supabase.from('holdings').delete().eq('security_id', securityId);
 }
 
+// Ajoute une action par ticker Yahoo (hors univers d'indices) via la fonction serverless.
+export async function addTickerViaApi(symbol) {
+  const res = await fetch('/api/add-ticker', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ symbol }),
+  });
+  const json = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(json.error || 'Échec de l’ajout');
+  return json.security;
+}
+
 export async function fetchHoldingsNews(limit = 60) {
   if (isDemo()) {
     const ids = new Set([...demoHoldings()]);
