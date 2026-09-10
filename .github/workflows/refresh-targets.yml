@@ -1,7 +1,7 @@
 name: refresh-targets
 on:
   schedule:
-    - cron: '0 6,18 * * *'      # 06h et 18h UTC
+    - cron: '20 */4 * * *'      # 3 tranches en parallèle toutes les 4 h
   workflow_dispatch:
 
 concurrency:
@@ -9,7 +9,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  run:
+  targets:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ingest/package-lock.json
+      - run: npm ci
+        working-directory: ingest
+      - name: targets (tranche ${{ matrix.shard }})
+        working-directory: ingest
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          SHARD_COUNT: '3'
+          SHARD_INDEX: ${{ matrix.shard }}
+        run: npm run targets
+
+  score:
+    needs: targets
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,12 +46,9 @@ jobs:
           cache-dependency-path: ingest/package-lock.json
       - run: npm ci
         working-directory: ingest
-      - name: targets + score
+      - name: recalcul des scores
         working-directory: ingest
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
-        run: |
-          npm run targets
-          npm run score
+        run: npm run score

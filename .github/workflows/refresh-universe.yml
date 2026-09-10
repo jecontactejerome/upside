@@ -16,11 +16,12 @@ jobs:
           cache-dependency-path: ingest/package-lock.json
       - run: npm ci
         working-directory: ingest
-      - name: rebuild constituent lists + upsert securities
+      - name: reconstruit les listes US + Europe puis met à jour securities
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
+          node scripts/build-us.mjs
           node scripts/build-stoxx-seed.mjs
-          node scripts/build-universe.mjs
+          node scripts/build-europe.mjs
           npm --prefix ingest run universe

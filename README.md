@@ -8,7 +8,9 @@ App perso de suivi du **potentiel de croissance boursier**. 3 onglets :
 - **News** — le brief de la semaine en 5 points (généré chaque lundi), centré sur les
   actions suivies dans Track (repli sur le marché si aucune position).
 
-- **Univers v1** : S&P 500 (503) + une sélection STOXX Europe 600 (~194). Extensible.
+- **Univers** : ~5 500 valeurs — US (`scripts/build-us.mjs`, listes NASDAQ/NYSE/AMEX, cap > 100 M$)
+  + Europe (`scripts/build-europe.mjs`, screener Yahoo par pays + `stoxx600.seed.json` curaté).
+  ~4 800 ont une couverture analystes et apparaissent dans Growth. + ajout libre par ticker.
 - **Coût de fonctionnement : 0 €** (Vercel Hobby + Supabase Free + GitHub Actions sur repo public + API gratuites).
 - **Totalement séparé de « On se voix »** : autre repo, autre projet Supabase, autre hébergement.
 
@@ -109,9 +111,10 @@ Les workflows dans `.github/workflows/` tournent tout seuls une fois le repo pou
 
 ## Étendre l'univers européen
 
-`ingest/data/stoxx600.seed.json` est une table curatée à la main. Pour s'approcher des 600 :
-ajouter des lignes dans `scripts/build-stoxx-seed.mjs` (`[ticker, suffixeYahoo, nom, secteur]`),
-relancer `node scripts/build-stoxx-seed.mjs && node scripts/build-universe.mjs && npm run universe`.
+Reconstruire l'univers :
+`node scripts/build-us.mjs && node scripts/build-stoxx-seed.mjs && node scripts/build-europe.mjs && npm --prefix ingest run universe`.
+Les blue chips européens sont garantis via `scripts/build-stoxx-seed.mjs` (table curatée
+`[ticker, suffixeYahoo, nom, secteur]`) ; le screener complète la longue traîne.
 Les symboles non résolus par Yahoo sont insérés `active=false` et listés en fin de run.
 
 ## Notes

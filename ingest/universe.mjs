@@ -1,10 +1,10 @@
 // Construit / met à jour la table `securities` à partir des fichiers
-//   ingest/data/sp500.json  +  ingest/data/stoxx600.json
+//   ingest/data/us.json  +  ingest/data/europe.json
 // Chaque symbole est validé contre Yahoo : ceux qui ne renvoient pas de
-// cotation sont insérés avec active=false et listés en fin de run.
+// cotation sont insérés avec active=false.
 //
-// À lancer ponctuellement (création initiale) puis ~1×/mois après mise à
-// jour des listes de constituants.
+// À lancer ponctuellement (création initiale) puis ~1×/mois après
+// reconstruction des listes (build-us.mjs / build-europe.mjs).
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { db, upsertBatched } from './lib/supabase.mjs';
@@ -17,8 +17,8 @@ function load(name) {
   return JSON.parse(readFileSync(p, 'utf8'));
 }
 
-const rows = [...load('sp500.json'), ...load('stoxx600.json')];
-// dédoublonnage par symbol_yahoo (au cas où une valeur serait dans 2 indices)
+const rows = [...load('us.json'), ...load('europe.json')];
+// dédoublonnage par symbol_yahoo (au cas où une valeur serait dans 2 listes)
 const bySym = new Map();
 for (const r of rows) {
   const cur = bySym.get(r.symbol_yahoo);

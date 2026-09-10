@@ -18,3 +18,17 @@ export async function upsertBatched(table, rows, { onConflict, chunk = 500 } = {
   }
   return done;
 }
+
+// SELECT paginé : contourne la limite de 1000 lignes de PostgREST.
+export async function selectAll(table, columns, applyFilters = (q) => q, page = 1000) {
+  const out = [];
+  for (let from = 0; ; from += page) {
+    let q = db.from(table).select(columns).range(from, from + page - 1);
+    q = applyFilters(q);
+    const { data, error } = await q;
+    if (error) throw new Error(`select ${table}: ${error.message}`);
+    out.push(...(data || []));
+    if (!data || data.length < page) break;
+  }
+  return out;
+}
