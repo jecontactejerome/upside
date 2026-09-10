@@ -70,14 +70,19 @@ const perSec = await runPool(
   { concurrency: 4, minGapMs: 400 },
 );
 
-// aplatit + dédoublonne par URL
-const seen = new Set();
+// aplatit + dédoublonne par URL ET par titre normalisé (syndications multiples)
+const seenUrl = new Set();
+const seenTitle = new Set();
+const norm = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 120);
 const rows = [];
 for (const list of perSec) {
   if (!Array.isArray(list)) continue;
   for (const a of list) {
-    if (!a.url || seen.has(a.url)) continue;
-    seen.add(a.url);
+    if (!a.url || !a.headline) continue;
+    const tkey = norm(a.headline);
+    if (seenUrl.has(a.url) || seenTitle.has(tkey)) continue;
+    seenUrl.add(a.url);
+    seenTitle.add(tkey);
     rows.push({
       security_id: idBySym.get(a.__sym) ?? null,
       headline: a.headline.slice(0, 400),
