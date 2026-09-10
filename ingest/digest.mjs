@@ -90,7 +90,7 @@ function pct(x) {
 }
 
 async function geminiDigest(f) {
-  const model = 'gemini-1.5-flash';
+  const model = 'gemini-2.0-flash';
   const prompt = [
     "Tu es analyste marché. Les données JSON ci-dessous concernent le PÉRIMÈTRE indiqué",
     `dans le champ "perimetre" (${f.perimetre}). Rédige EXACTEMENT 5 points clés à retenir`,
