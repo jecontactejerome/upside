@@ -98,11 +98,11 @@ export const DEMO_WEEKLY_DIGEST = {
   week_start: mondayOf(),
   generated_by: 'gemini',
   bullets: [
-    { title: 'Les semi-conducteurs ont tiré la cote', detail: 'Nvidia et AMD ont progressé sur la semaine, portés par un regain d’appétit pour l’IA ; les objectifs de cours restent nettement au-dessus des niveaux actuels.' },
+    { title: 'Vos positions : Nvidia en tête', detail: 'Nvidia a progressé sur la semaine, portée par un regain d’appétit pour l’IA ; l’objectif de cours reste nettement au-dessus du niveau actuel.' },
     { title: 'Airbus : plus fort écart au consensus', detail: 'À 196 €, le titre affiche +17,6 % de potentiel vs l’objectif moyen (231 €) sur 23 analystes.' },
-    { title: 'Santé : Eli Lilly et Novo Nordisk bien orientés', detail: 'Les deux valeurs conservent une recommandation « acheter » et un potentiel supérieur à 20 %.' },
-    { title: 'Énergie sous pression', detail: 'Shell et TotalEnergies ont reculé sur la semaine ; le potentiel reste positif mais le momentum des révisions faiblit.' },
-    { title: 'Rappel méthode', detail: 'Le score combine écart au consensus, nombre d’analystes, révisions récentes et note moyenne. Ceci n’est pas un conseil en investissement.' },
+    { title: 'Révisions d’objectifs', detail: 'Aucune révision majeure sur vos positions cette semaine ; le momentum reste stable.' },
+    { title: 'Actu de vos positions', detail: 'Nvidia dévoile une nouvelle génération de puces IA · Airbus relève ses cadences de production sur l’A320.' },
+    { title: 'Rappel méthode', detail: 'Le brief se concentre sur les actions de l’onglet Track. Ceci n’est pas un conseil en investissement.' },
   ],
 };
 

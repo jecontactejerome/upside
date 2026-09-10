@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { LineChart, Briefcase, Newspaper } from 'lucide-react';
+import { LineChart, Radar, Newspaper } from 'lucide-react';
 
 const tabs = [
   { to: '/growth', label: 'Growth', Icon: LineChart },
-  { to: '/track', label: 'Track', Icon: Briefcase },
+  { to: '/track', label: 'Track', Icon: Radar },
   { to: '/news', label: 'News', Icon: Newspaper },
 ];
 

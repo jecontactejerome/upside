@@ -333,19 +333,39 @@ button { font-family: inherit; }
 .search-row:disabled { cursor: default; opacity: 0.55; }
 .search-row .muted, .muted { color: var(--text-2); font-weight: 400; }
 
-.hold-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
-.hold-chip {
-  display: inline-flex;
+/* barre compacte "N actions suivies · Gérer" */
+.track-manage {
+  width: 100%;
+  display: flex;
   align-items: center;
-  gap: 6px;
-  background: var(--surface);
-  border-radius: 999px;
-  padding: 7px 8px 7px 13px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--hairline);
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 4px 0 2px;
+  font-size: 14px;
+  font-weight: 550;
+  color: var(--text);
+  cursor: pointer;
 }
-.hold-chip button {
+.track-manage-cta { color: var(--accent); font-weight: 600; }
+
+/* liste de gestion dans la feuille */
+.manage-list { margin-top: 6px; }
+.manage-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 2px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 13.5px;
+}
+.manage-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.manage-remove {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,7 +373,7 @@ button { font-family: inherit; }
   background: var(--surface-2);
   color: var(--text-2);
   border-radius: 999px;
-  width: 20px; height: 20px;
+  width: 24px; height: 24px;
   cursor: pointer;
 }
 

@@ -1,11 +1,12 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Plus, X, Search } from 'lucide-react';
+import { X } from 'lucide-react';
 import { NewsItem } from '../components/NewsItem.jsx';
+import { AddSearch } from '../components/AddSearch.jsx';
+import { Sheet } from '../components/Sheet.jsx';
 import {
   fetchHoldings,
   fetchHoldingsNews,
-  searchSecurities,
   addHolding,
   removeHolding,
 } from '../lib/data.js';
@@ -18,49 +19,33 @@ export default function Track() {
 
   const [holdings, setHoldings] = useState(null);
   const [news, setNews] = useState(null);
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
-  const [searching, setSearching] = useState(false);
-  const debounce = useRef();
+  const [manageOpen, setManageOpen] = useState(false);
 
-  const reload = useCallback(async () => {
-    const h = await fetchHoldings();
-    setHoldings(h);
+  const reloadNews = useCallback(async () => {
     setNews(await fetchHoldingsNews(60));
   }, []);
+
+  const reload = useCallback(async () => {
+    setHoldings(await fetchHoldings());
+    reloadNews();
+  }, [reloadNews]);
 
   useEffect(() => {
     if (!gated) reload();
   }, [gated, reload]);
 
-  useEffect(() => {
-    clearTimeout(debounce.current);
-    if (query.trim().length < 2) {
-      setResults([]);
-      return;
-    }
-    setSearching(true);
-    debounce.current = setTimeout(async () => {
-      setResults(await searchSecurities(query));
-      setSearching(false);
-    }, 220);
-    return () => clearTimeout(debounce.current);
-  }, [query]);
-
   const heldIds = new Set((holdings ?? []).map((h) => h.id));
 
   async function add(sec) {
-    setQuery('');
-    setResults([]);
     setHoldings((h) => [{ ...sec, added_at: new Date().toISOString() }, ...(h ?? [])]);
     await addHolding(sec.id, user?.id);
-    reload();
+    reloadNews();
   }
 
   async function remove(id) {
     setHoldings((h) => (h ?? []).filter((x) => x.id !== id));
     await removeHolding(id);
-    reload();
+    reloadNews();
   }
 
   if (gated) {
@@ -76,81 +61,72 @@ export default function Track() {
     );
   }
 
+  const count = holdings?.length ?? 0;
+
   return (
     <div className="screen">
       <h1 className="screen-title">Track</h1>
-      <p style={{ fontSize: 13.5, color: 'var(--text-2)', margin: '0 2px 14px' }}>
-        Ajoute les actions que tu détiens et suis leur actualité.
-      </p>
 
-      {/* --- ajout d'une action --- */}
-      <div className="search-wrap">
-        <div className="search-field">
-          <Search size={16} color="var(--text-2)" />
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Ajouter une action (nom ou ticker)…"
-            autoCorrect="off"
-            autoCapitalize="off"
-          />
-        </div>
-        {(results.length > 0 || (searching && query.length >= 2)) && (
-          <div className="search-results">
-            {searching && <div className="search-row muted">Recherche…</div>}
-            {results.map((s) => (
-              <button
-                key={s.id}
-                className="search-row"
-                disabled={heldIds.has(s.id)}
-                onClick={() => add(s)}
-              >
-                <span>
-                  <strong>{s.name}</strong>
-                  <span className="muted"> · {s.symbol_yahoo} · {s.exchange || s.region}</span>
-                </span>
-                {heldIds.has(s.id) ? <span className="muted">ajoutée</span> : <Plus size={16} />}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
+      {/* --- barre compacte : nb d'actions + gérer --- */}
+      <button className="track-manage" onClick={() => setManageOpen(true)}>
+        <span>
+          {holdings === null
+            ? 'Chargement…'
+            : count === 0
+              ? 'Aucune action suivie'
+              : `${count} action${count > 1 ? 's' : ''} suivie${count > 1 ? 's' : ''}`}
+        </span>
+        <span className="track-manage-cta">{count === 0 ? 'Ajouter' : 'Gérer'}</span>
+      </button>
 
-      {/* --- liste des actions détenues --- */}
-      {holdings === null ? (
-        <div className="skeleton" style={{ height: 44, margin: '12px 0' }} />
-      ) : holdings.length === 0 ? (
-        <p className="empty" style={{ padding: '24px 20px' }}>
-          Aucune action suivie. Utilise la recherche ci-dessus.
-        </p>
-      ) : (
-        <div className="hold-chips">
-          {holdings.map((h) => (
-            <span className="hold-chip" key={h.id}>
-              {h.symbol_yahoo}
-              <button aria-label={`Retirer ${h.name}`} onClick={() => remove(h.id)}>
-                <X size={13} />
-              </button>
-            </span>
-          ))}
-        </div>
-      )}
-
-      {/* --- fil d'actu --- */}
-      <h2 style={{ fontSize: 16, fontWeight: 650, margin: '22px 2px 4px' }}>Fil d’actualité</h2>
+      {/* --- fil d'actu (occupe l'écran) --- */}
+      <h2 style={{ fontSize: 16, fontWeight: 650, margin: '20px 2px 6px' }}>Fil d’actualité</h2>
       {news === null ? (
-        Array.from({ length: 5 }).map((_, i) => (
+        Array.from({ length: 6 }).map((_, i) => (
           <div key={i} className="skeleton" style={{ height: 72, marginBottom: 8 }} />
         ))
       ) : news.length === 0 ? (
         <p className="empty">
-          {holdings?.length
+          {count
             ? 'Pas encore d’article pour ces valeurs. Le fil se met à jour toutes les 2 heures.'
-            : 'Ajoute une action pour voir son actualité ici.'}
+            : 'Ajoute des actions pour voir leur actualité ici.'}
         </p>
       ) : (
         news.map((a) => <NewsItem key={a.id} article={a} />)
       )}
+
+      {/* --- feuille de gestion --- */}
+      <Sheet open={manageOpen} onClose={() => setManageOpen(false)}>
+        <h2>Mes actions</h2>
+        <p style={{ fontSize: 12.5, color: 'var(--text-2)', margin: '2px 0 12px' }}>
+          {count} suivie{count > 1 ? 's' : ''} · recherche dans le S&amp;P 500 et le STOXX 600
+        </p>
+
+        <AddSearch heldIds={heldIds} onAdd={add} autoFocus />
+
+        <div className="manage-list">
+          {(holdings ?? []).length === 0 && (
+            <p className="muted" style={{ fontSize: 13, padding: '16px 2px' }}>
+              Aucune action pour l’instant.
+            </p>
+          )}
+          {(holdings ?? []).map((h) => (
+            <div className="manage-row" key={h.id}>
+              <span className="manage-name">
+                <strong>{h.name}</strong>
+                <span className="muted"> · {h.symbol_yahoo} · {h.exchange || h.region}</span>
+              </span>
+              <button className="manage-remove" aria-label={`Retirer ${h.name}`} onClick={() => remove(h.id)}>
+                <X size={15} />
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <button className="btn-primary" style={{ marginTop: 16 }} onClick={() => setManageOpen(false)}>
+          Terminé
+        </button>
+      </Sheet>
     </div>
   );
 }

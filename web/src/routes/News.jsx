@@ -13,7 +13,8 @@ export default function News() {
     <div className="screen">
       <h1 className="screen-title">News</h1>
       <p style={{ fontSize: 13.5, color: 'var(--text-2)', margin: '0 2px 16px' }}>
-        Le brief de la semaine : les faits marquants à connaître pour bien investir.
+        Le brief de la semaine, centré sur les actions suivies dans l’onglet Track
+        (à défaut, sur le marché).
       </p>
 
       {digest === undefined ? (

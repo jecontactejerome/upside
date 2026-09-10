@@ -13,30 +13,35 @@ function mondayOf(date = new Date()) {
   return d.toISOString().slice(0, 10);
 }
 const weekStart = mondayOf();
-
-// ---------- agrégation des faits de la semaine ----------
-const { data: movers } = await db
-  .from('growth_feed')
-  .select('name, symbol_yahoo, upside_pct, num_analysts, recommendation_key, momentum, score')
-  .order('score', { ascending: false })
-  .limit(8);
-
-const { data: revisions } = await db
-  .from('growth_feed')
-  .select('name, symbol_yahoo, momentum, upside_pct')
-  .order('momentum', { ascending: false })
-  .limit(5);
-
 const sinceIso = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString();
-const { data: news } = await db
+
+// ---------- périmètre : les actions détenues (onglet Track) ----------
+// Repli sur les meilleures valeurs par score si le portefeuille est vide.
+const { data: held } = await db.from('holdings').select('security_id');
+const holdingIds = (held || []).map((h) => h.security_id);
+const scoped = holdingIds.length > 0;
+
+let feedQuery = db
+  .from('growth_feed')
+  .select('security_id, name, symbol_yahoo, upside_pct, num_analysts, recommendation_key, momentum, score');
+if (scoped) feedQuery = feedQuery.in('security_id', holdingIds);
+const { data: feed } = await feedQuery;
+
+const movers = [...(feed || [])].sort((a, b) => (b.score ?? -9) - (a.score ?? -9)).slice(0, 8);
+const revisions = [...(feed || [])].sort((a, b) => (b.momentum ?? -9) - (a.momentum ?? -9)).slice(0, 5);
+
+let newsQuery = db
   .from('news_articles')
   .select('headline, source, published_at, securities(name)')
   .gte('published_at', sinceIso)
   .order('published_at', { ascending: false })
   .limit(40);
+if (scoped) newsQuery = newsQuery.in('security_id', holdingIds);
+const { data: news } = await newsQuery;
 
 const facts = {
   semaine_du: weekStart,
+  perimetre: scoped ? 'actions détenues (Track)' : 'marché (S&P 500 + STOXX 600)',
   top_potentiel: (movers || []).map((m) => ({
     valeur: m.name,
     ticker: m.symbol_yahoo,
@@ -87,8 +92,10 @@ function pct(x) {
 async function geminiDigest(f) {
   const model = 'gemini-1.5-flash';
   const prompt = [
-    "Tu es analyste marché. À partir des données JSON ci-dessous, rédige EXACTEMENT 5 points",
-    "clés retenir de la SEMAINE ÉCOULÉE pour bien investir en bourse (indices S&P 500 et STOXX 600).",
+    "Tu es analyste marché. Les données JSON ci-dessous concernent le PÉRIMÈTRE indiqué",
+    `dans le champ "perimetre" (${f.perimetre}). Rédige EXACTEMENT 5 points clés à retenir`,
+    "de la SEMAINE ÉCOULÉE pour ce périmètre : mouvements notables, révisions d'objectifs,",
+    "et actualités marquantes des valeurs concernées.",
     "Style sobre, factuel, en français, sans conseil personnalisé, sans emoji.",
     'Réponds UNIQUEMENT par un tableau JSON : [{"title":"...","detail":"..."}] (5 éléments,',
     "title <= 60 caractères, detail 1 à 2 phrases).",
@@ -134,12 +141,16 @@ function ruleDigest(f) {
   }
   const names = f.top_potentiel.slice(0, 5).map((x) => x.valeur).join(', ');
   out.push({
-    title: 'Valeurs au meilleur potentiel cette semaine',
-    detail: `Les 5 valeurs au meilleur score : ${names}.`,
+    title: f.perimetre.startsWith('actions détenues')
+      ? 'Vos positions au meilleur potentiel'
+      : 'Valeurs au meilleur potentiel cette semaine',
+    detail: `${names}.`,
   });
   if (f.titres_actu_semaine.length) {
     out.push({
-      title: 'Actu marquante de la semaine',
+      title: f.perimetre.startsWith('actions détenues')
+        ? 'Actu de vos positions'
+        : 'Actu marquante de la semaine',
       detail: f.titres_actu_semaine.slice(0, 3).join(' · '),
     });
   }

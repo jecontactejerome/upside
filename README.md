@@ -5,7 +5,8 @@ App perso de suivi du **potentiel de croissance boursier**. 3 onglets :
 - **Growth** — classe les actions selon l'écart entre leur cours et l'objectif de cours
   moyen des analystes ; tri, filtres, favoris (⭐) à surveiller.
 - **Track** — les actions que tu détiens + leur fil d'actualité.
-- **News** — le brief de la semaine en 5 points (généré chaque lundi).
+- **News** — le brief de la semaine en 5 points (généré chaque lundi), centré sur les
+  actions suivies dans Track (repli sur le marché si aucune position).
 
 - **Univers v1** : S&P 500 (503) + une sélection STOXX Europe 600 (~194). Extensible.
 - **Coût de fonctionnement : 0 €** (Vercel Hobby + Supabase Free + GitHub Actions sur repo public + API gratuites).
@@ -97,7 +98,7 @@ Les workflows dans `.github/workflows/` tournent tout seuls une fois le repo pou
 | `refresh-quotes` | ~20 min | cours + historique quotidien |
 | `refresh-targets` | 06h / 18h UTC | objectifs analystes + recalcul du score |
 | `refresh-news` | 2 h | articles des 25 meilleures valeurs |
-| `weekly-digest` | lundi 06h UTC | brief de la semaine en 5 points |
+| `weekly-digest` | lundi 06h UTC | brief de la semaine en 5 points (périmètre = actions détenues) |
 | `refresh-universe` | 1er du mois | reconstruit la liste des valeurs |
 | `keep-alive` | 3 h | évite la mise en pause du projet Supabase |
 
