@@ -1,0 +1,24 @@
+name: daily-digest
+on:
+  schedule:
+    - cron: '30 6 * * *'       # 06h30 UTC
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: ingest/package-lock.json
+      - run: npm ci
+        working-directory: ingest
+      - run: npm run digest
+        working-directory: ingest
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

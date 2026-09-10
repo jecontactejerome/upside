@@ -1,0 +1,20 @@
+{
+  "name": "upside-ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Récupération des cours, objectifs analystes, news et brief du jour pour Upside.",
+  "scripts": {
+    "universe": "node universe.mjs",
+    "quotes": "node quotes.mjs",
+    "targets": "node targets.mjs",
+    "score": "node score.mjs",
+    "news": "node news.mjs",
+    "digest": "node digest.mjs",
+    "all": "node quotes.mjs && node targets.mjs && node score.mjs && node news.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "yahoo-finance2": "^4.0.2"
+  }
+}

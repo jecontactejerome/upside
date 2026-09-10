@@ -1,0 +1,26 @@
+name: refresh-universe
+on:
+  schedule:
+    - cron: '0 4 1 * *'        # le 1er de chaque mois, 04h UTC
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: ingest/package-lock.json
+      - run: npm ci
+        working-directory: ingest
+      - name: rebuild constituent lists + upsert securities
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          node scripts/build-stoxx-seed.mjs
+          node scripts/build-universe.mjs
+          npm --prefix ingest run universe

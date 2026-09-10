@@ -1,0 +1,2912 @@
+[
+  {
+    "symbol_yahoo": "MC.PA",
+    "symbol_finnhub": "MC.PA",
+    "isin": null,
+    "name": "LVMH",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "OR.PA",
+    "symbol_finnhub": "OR.PA",
+    "isin": null,
+    "name": "L’Oréal",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RMS.PA",
+    "symbol_finnhub": "RMS.PA",
+    "isin": null,
+    "name": "Hermès International",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "TTE.PA",
+    "symbol_finnhub": "TTE.PA",
+    "isin": null,
+    "name": "TotalEnergies",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SAN.PA",
+    "symbol_finnhub": "SAN.PA",
+    "isin": null,
+    "name": "Sanofi",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AIR.PA",
+    "symbol_finnhub": "AIR.PA",
+    "isin": null,
+    "name": "Airbus",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SU.PA",
+    "symbol_finnhub": "SU.PA",
+    "isin": null,
+    "name": "Schneider Electric",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AI.PA",
+    "symbol_finnhub": "AI.PA",
+    "isin": null,
+    "name": "Air Liquide",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EL.PA",
+    "symbol_finnhub": "EL.PA",
+    "isin": null,
+    "name": "EssilorLuxottica",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BNP.PA",
+    "symbol_finnhub": "BNP.PA",
+    "isin": null,
+    "name": "BNP Paribas",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CS.PA",
+    "symbol_finnhub": "CS.PA",
+    "isin": null,
+    "name": "AXA",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DG.PA",
+    "symbol_finnhub": "DG.PA",
+    "isin": null,
+    "name": "Vinci",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SAF.PA",
+    "symbol_finnhub": "SAF.PA",
+    "isin": null,
+    "name": "Safran",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "KER.PA",
+    "symbol_finnhub": "KER.PA",
+    "isin": null,
+    "name": "Kering",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BN.PA",
+    "symbol_finnhub": "BN.PA",
+    "isin": null,
+    "name": "Danone",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CAP.PA",
+    "symbol_finnhub": "CAP.PA",
+    "isin": null,
+    "name": "Capgemini",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ACA.PA",
+    "symbol_finnhub": "ACA.PA",
+    "isin": null,
+    "name": "Crédit Agricole",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ENGI.PA",
+    "symbol_finnhub": "ENGI.PA",
+    "isin": null,
+    "name": "Engie",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ML.PA",
+    "symbol_finnhub": "ML.PA",
+    "isin": null,
+    "name": "Michelin",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RI.PA",
+    "symbol_finnhub": "RI.PA",
+    "isin": null,
+    "name": "Pernod Ricard",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GLE.PA",
+    "symbol_finnhub": "GLE.PA",
+    "isin": null,
+    "name": "Société Générale",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "PUB.PA",
+    "symbol_finnhub": "PUB.PA",
+    "isin": null,
+    "name": "Publicis Groupe",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "LR.PA",
+    "symbol_finnhub": "LR.PA",
+    "isin": null,
+    "name": "Legrand",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HO.PA",
+    "symbol_finnhub": "HO.PA",
+    "isin": null,
+    "name": "Thales",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ORA.PA",
+    "symbol_finnhub": "ORA.PA",
+    "isin": null,
+    "name": "Orange",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VIE.PA",
+    "symbol_finnhub": "VIE.PA",
+    "isin": null,
+    "name": "Veolia Environnement",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SGO.PA",
+    "symbol_finnhub": "SGO.PA",
+    "isin": null,
+    "name": "Saint-Gobain",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DSY.PA",
+    "symbol_finnhub": "DSY.PA",
+    "isin": null,
+    "name": "Dassault Systèmes",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CA.PA",
+    "symbol_finnhub": "CA.PA",
+    "isin": null,
+    "name": "Carrefour",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RNO.PA",
+    "symbol_finnhub": "RNO.PA",
+    "isin": null,
+    "name": "Renault",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "STLAP.PA",
+    "symbol_finnhub": "STLAP.PA",
+    "isin": null,
+    "name": "Stellantis",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EN.PA",
+    "symbol_finnhub": "EN.PA",
+    "isin": null,
+    "name": "Bouygues",
+    "exchange": "Euronext Paris",
+    "mic": "XPAR",
+    "country": "FR",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SAP.DE",
+    "symbol_finnhub": "SAP.DE",
+    "isin": null,
+    "name": "SAP",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SIE.DE",
+    "symbol_finnhub": "SIE.DE",
+    "isin": null,
+    "name": "Siemens",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ALV.DE",
+    "symbol_finnhub": "ALV.DE",
+    "isin": null,
+    "name": "Allianz",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DTE.DE",
+    "symbol_finnhub": "DTE.DE",
+    "isin": null,
+    "name": "Deutsche Telekom",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MBG.DE",
+    "symbol_finnhub": "MBG.DE",
+    "isin": null,
+    "name": "Mercedes-Benz Group",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BMW.DE",
+    "symbol_finnhub": "BMW.DE",
+    "isin": null,
+    "name": "BMW",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VOW3.DE",
+    "symbol_finnhub": "VOW3.DE",
+    "isin": null,
+    "name": "Volkswagen",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BAS.DE",
+    "symbol_finnhub": "BAS.DE",
+    "isin": null,
+    "name": "BASF",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BAYN.DE",
+    "symbol_finnhub": "BAYN.DE",
+    "isin": null,
+    "name": "Bayer",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MRK.DE",
+    "symbol_finnhub": "MRK.DE",
+    "isin": null,
+    "name": "Merck KGaA",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DB1.DE",
+    "symbol_finnhub": "DB1.DE",
+    "isin": null,
+    "name": "Deutsche Börse",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MUV2.DE",
+    "symbol_finnhub": "MUV2.DE",
+    "isin": null,
+    "name": "Munich Re",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DHL.DE",
+    "symbol_finnhub": "DHL.DE",
+    "isin": null,
+    "name": "DHL Group",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADS.DE",
+    "symbol_finnhub": "ADS.DE",
+    "isin": null,
+    "name": "Adidas",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "IFX.DE",
+    "symbol_finnhub": "IFX.DE",
+    "isin": null,
+    "name": "Infineon Technologies",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RWE.DE",
+    "symbol_finnhub": "RWE.DE",
+    "isin": null,
+    "name": "RWE",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EOAN.DE",
+    "symbol_finnhub": "EOAN.DE",
+    "isin": null,
+    "name": "E.ON",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HEN3.DE",
+    "symbol_finnhub": "HEN3.DE",
+    "isin": null,
+    "name": "Henkel",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "P911.DE",
+    "symbol_finnhub": "P911.DE",
+    "isin": null,
+    "name": "Porsche AG",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SHL.DE",
+    "symbol_finnhub": "SHL.DE",
+    "isin": null,
+    "name": "Siemens Healthineers",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DBK.DE",
+    "symbol_finnhub": "DBK.DE",
+    "isin": null,
+    "name": "Deutsche Bank",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CBK.DE",
+    "symbol_finnhub": "CBK.DE",
+    "isin": null,
+    "name": "Commerzbank",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VNA.DE",
+    "symbol_finnhub": "VNA.DE",
+    "isin": null,
+    "name": "Vonovia",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Real Estate",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BEI.DE",
+    "symbol_finnhub": "BEI.DE",
+    "isin": null,
+    "name": "Beiersdorf",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MTX.DE",
+    "symbol_finnhub": "MTX.DE",
+    "isin": null,
+    "name": "MTU Aero Engines",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HEI.DE",
+    "symbol_finnhub": "HEI.DE",
+    "isin": null,
+    "name": "Heidelberg Materials",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SY1.DE",
+    "symbol_finnhub": "SY1.DE",
+    "isin": null,
+    "name": "Symrise",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DTG.DE",
+    "symbol_finnhub": "DTG.DE",
+    "isin": null,
+    "name": "Daimler Truck",
+    "exchange": "XETRA",
+    "mic": "XETR",
+    "country": "DE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SHEL.L",
+    "symbol_finnhub": "SHEL.L",
+    "isin": null,
+    "name": "Shell",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AZN.L",
+    "symbol_finnhub": "AZN.L",
+    "isin": null,
+    "name": "AstraZeneca",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HSBA.L",
+    "symbol_finnhub": "HSBA.L",
+    "isin": null,
+    "name": "HSBC Holdings",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ULVR.L",
+    "symbol_finnhub": "ULVR.L",
+    "isin": null,
+    "name": "Unilever",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BP.L",
+    "symbol_finnhub": "BP.L",
+    "isin": null,
+    "name": "BP",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GSK.L",
+    "symbol_finnhub": "GSK.L",
+    "isin": null,
+    "name": "GSK",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RIO.L",
+    "symbol_finnhub": "RIO.L",
+    "isin": null,
+    "name": "Rio Tinto",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DGE.L",
+    "symbol_finnhub": "DGE.L",
+    "isin": null,
+    "name": "Diageo",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "REL.L",
+    "symbol_finnhub": "REL.L",
+    "isin": null,
+    "name": "RELX",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BATS.L",
+    "symbol_finnhub": "BATS.L",
+    "isin": null,
+    "name": "British American Tobacco",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GLEN.L",
+    "symbol_finnhub": "GLEN.L",
+    "isin": null,
+    "name": "Glencore",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NG.L",
+    "symbol_finnhub": "NG.L",
+    "isin": null,
+    "name": "National Grid",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "LSEG.L",
+    "symbol_finnhub": "LSEG.L",
+    "isin": null,
+    "name": "London Stock Exchange Group",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BA.L",
+    "symbol_finnhub": "BA.L",
+    "isin": null,
+    "name": "BAE Systems",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "PRU.L",
+    "symbol_finnhub": "PRU.L",
+    "isin": null,
+    "name": "Prudential",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VOD.L",
+    "symbol_finnhub": "VOD.L",
+    "isin": null,
+    "name": "Vodafone Group",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "LLOY.L",
+    "symbol_finnhub": "LLOY.L",
+    "isin": null,
+    "name": "Lloyds Banking Group",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BARC.L",
+    "symbol_finnhub": "BARC.L",
+    "isin": null,
+    "name": "Barclays",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NWG.L",
+    "symbol_finnhub": "NWG.L",
+    "isin": null,
+    "name": "NatWest Group",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "STAN.L",
+    "symbol_finnhub": "STAN.L",
+    "isin": null,
+    "name": "Standard Chartered",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "TSCO.L",
+    "symbol_finnhub": "TSCO.L",
+    "isin": null,
+    "name": "Tesco",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CPG.L",
+    "symbol_finnhub": "CPG.L",
+    "isin": null,
+    "name": "Compass Group",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AAL.L",
+    "symbol_finnhub": "AAL.L",
+    "isin": null,
+    "name": "Anglo American",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RKT.L",
+    "symbol_finnhub": "RKT.L",
+    "isin": null,
+    "name": "Reckitt Benckiser",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "IMB.L",
+    "symbol_finnhub": "IMB.L",
+    "isin": null,
+    "name": "Imperial Brands",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EXPN.L",
+    "symbol_finnhub": "EXPN.L",
+    "isin": null,
+    "name": "Experian",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ANTO.L",
+    "symbol_finnhub": "ANTO.L",
+    "isin": null,
+    "name": "Antofagasta",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SGE.L",
+    "symbol_finnhub": "SGE.L",
+    "isin": null,
+    "name": "Sage Group",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AV.L",
+    "symbol_finnhub": "AV.L",
+    "isin": null,
+    "name": "Aviva",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HLN.L",
+    "symbol_finnhub": "HLN.L",
+    "isin": null,
+    "name": "Haleon",
+    "exchange": "London SE",
+    "mic": "XLON",
+    "country": "GB",
+    "region": "EU",
+    "currency": "GBp",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ASML.AS",
+    "symbol_finnhub": "ASML.AS",
+    "isin": null,
+    "name": "ASML Holding",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "PRX.AS",
+    "symbol_finnhub": "PRX.AS",
+    "isin": null,
+    "name": "Prosus",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "INGA.AS",
+    "symbol_finnhub": "INGA.AS",
+    "isin": null,
+    "name": "ING Groep",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADYEN.AS",
+    "symbol_finnhub": "ADYEN.AS",
+    "isin": null,
+    "name": "Adyen",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AD.AS",
+    "symbol_finnhub": "AD.AS",
+    "isin": null,
+    "name": "Ahold Delhaize",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "PHIA.AS",
+    "symbol_finnhub": "PHIA.AS",
+    "isin": null,
+    "name": "Philips",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "WKL.AS",
+    "symbol_finnhub": "WKL.AS",
+    "isin": null,
+    "name": "Wolters Kluwer",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HEIA.AS",
+    "symbol_finnhub": "HEIA.AS",
+    "isin": null,
+    "name": "Heineken",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DSFIR.AS",
+    "symbol_finnhub": "DSFIR.AS",
+    "isin": null,
+    "name": "DSM-Firmenich",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AKZA.AS",
+    "symbol_finnhub": "AKZA.AS",
+    "isin": null,
+    "name": "Akzo Nobel",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RAND.AS",
+    "symbol_finnhub": "RAND.AS",
+    "isin": null,
+    "name": "Randstad",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "KPN.AS",
+    "symbol_finnhub": "KPN.AS",
+    "isin": null,
+    "name": "KPN",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ASM.AS",
+    "symbol_finnhub": "ASM.AS",
+    "isin": null,
+    "name": "ASM International",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BESI.AS",
+    "symbol_finnhub": "BESI.AS",
+    "isin": null,
+    "name": "BE Semiconductor Industries",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NN.AS",
+    "symbol_finnhub": "NN.AS",
+    "isin": null,
+    "name": "NN Group",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ABN.AS",
+    "symbol_finnhub": "ABN.AS",
+    "isin": null,
+    "name": "ABN AMRO",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "IMCD.AS",
+    "symbol_finnhub": "IMCD.AS",
+    "isin": null,
+    "name": "IMCD",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "UMG.AS",
+    "symbol_finnhub": "UMG.AS",
+    "isin": null,
+    "name": "Universal Music Group",
+    "exchange": "Euronext Amsterdam",
+    "mic": "XAMS",
+    "country": "NL",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NESN.SW",
+    "symbol_finnhub": "NESN.SW",
+    "isin": null,
+    "name": "Nestlé",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ROG.SW",
+    "symbol_finnhub": "ROG.SW",
+    "isin": null,
+    "name": "Roche Holding",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NOVN.SW",
+    "symbol_finnhub": "NOVN.SW",
+    "isin": null,
+    "name": "Novartis",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ZURN.SW",
+    "symbol_finnhub": "ZURN.SW",
+    "isin": null,
+    "name": "Zurich Insurance Group",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "UBSG.SW",
+    "symbol_finnhub": "UBSG.SW",
+    "isin": null,
+    "name": "UBS Group",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ABBN.SW",
+    "symbol_finnhub": "ABBN.SW",
+    "isin": null,
+    "name": "ABB",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CFR.SW",
+    "symbol_finnhub": "CFR.SW",
+    "isin": null,
+    "name": "Richemont",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "LONN.SW",
+    "symbol_finnhub": "LONN.SW",
+    "isin": null,
+    "name": "Lonza Group",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SIKA.SW",
+    "symbol_finnhub": "SIKA.SW",
+    "isin": null,
+    "name": "Sika",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GIVN.SW",
+    "symbol_finnhub": "GIVN.SW",
+    "isin": null,
+    "name": "Givaudan",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SREN.SW",
+    "symbol_finnhub": "SREN.SW",
+    "isin": null,
+    "name": "Swiss Re",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ALC.SW",
+    "symbol_finnhub": "ALC.SW",
+    "isin": null,
+    "name": "Alcon",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HOLN.SW",
+    "symbol_finnhub": "HOLN.SW",
+    "isin": null,
+    "name": "Holcim",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GEBN.SW",
+    "symbol_finnhub": "GEBN.SW",
+    "isin": null,
+    "name": "Geberit",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SLHN.SW",
+    "symbol_finnhub": "SLHN.SW",
+    "isin": null,
+    "name": "Swiss Life Holding",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SCMN.SW",
+    "symbol_finnhub": "SCMN.SW",
+    "isin": null,
+    "name": "Swisscom",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "PGHN.SW",
+    "symbol_finnhub": "PGHN.SW",
+    "isin": null,
+    "name": "Partners Group",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SOON.SW",
+    "symbol_finnhub": "SOON.SW",
+    "isin": null,
+    "name": "Sonova Holding",
+    "exchange": "SIX Swiss",
+    "mic": "XSWX",
+    "country": "CH",
+    "region": "EU",
+    "currency": "CHF",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SAN.MC",
+    "symbol_finnhub": "SAN.MC",
+    "isin": null,
+    "name": "Banco Santander",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "IBE.MC",
+    "symbol_finnhub": "IBE.MC",
+    "isin": null,
+    "name": "Iberdrola",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ITX.MC",
+    "symbol_finnhub": "ITX.MC",
+    "isin": null,
+    "name": "Inditex",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "BBVA.MC",
+    "symbol_finnhub": "BBVA.MC",
+    "isin": null,
+    "name": "BBVA",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "TEF.MC",
+    "symbol_finnhub": "TEF.MC",
+    "isin": null,
+    "name": "Telefónica",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AENA.MC",
+    "symbol_finnhub": "AENA.MC",
+    "isin": null,
+    "name": "Aena",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "REP.MC",
+    "symbol_finnhub": "REP.MC",
+    "isin": null,
+    "name": "Repsol",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CLNX.MC",
+    "symbol_finnhub": "CLNX.MC",
+    "isin": null,
+    "name": "Cellnex Telecom",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMS.MC",
+    "symbol_finnhub": "AMS.MC",
+    "isin": null,
+    "name": "Amadeus IT Group",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "FER.MC",
+    "symbol_finnhub": "FER.MC",
+    "isin": null,
+    "name": "Ferrovial",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CABK.MC",
+    "symbol_finnhub": "CABK.MC",
+    "isin": null,
+    "name": "CaixaBank",
+    "exchange": "BME Madrid",
+    "mic": "XMAD",
+    "country": "ES",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ENEL.MI",
+    "symbol_finnhub": "ENEL.MI",
+    "isin": null,
+    "name": "Enel",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ISP.MI",
+    "symbol_finnhub": "ISP.MI",
+    "isin": null,
+    "name": "Intesa Sanpaolo",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "UCG.MI",
+    "symbol_finnhub": "UCG.MI",
+    "isin": null,
+    "name": "UniCredit",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ENI.MI",
+    "symbol_finnhub": "ENI.MI",
+    "isin": null,
+    "name": "Eni",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RACE.MI",
+    "symbol_finnhub": "RACE.MI",
+    "isin": null,
+    "name": "Ferrari",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "STLAM.MI",
+    "symbol_finnhub": "STLAM.MI",
+    "isin": null,
+    "name": "Stellantis",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "G.MI",
+    "symbol_finnhub": "G.MI",
+    "isin": null,
+    "name": "Assicurazioni Generali",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "STM.MI",
+    "symbol_finnhub": "STM.MI",
+    "isin": null,
+    "name": "STMicroelectronics",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MONC.MI",
+    "symbol_finnhub": "MONC.MI",
+    "isin": null,
+    "name": "Moncler",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "PST.MI",
+    "symbol_finnhub": "PST.MI",
+    "isin": null,
+    "name": "Poste Italiane",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "LDO.MI",
+    "symbol_finnhub": "LDO.MI",
+    "isin": null,
+    "name": "Leonardo",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MB.MI",
+    "symbol_finnhub": "MB.MI",
+    "isin": null,
+    "name": "Mediobanca",
+    "exchange": "Borsa Italiana",
+    "mic": "XMIL",
+    "country": "IT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ATCO-A.ST",
+    "symbol_finnhub": "ATCO-A.ST",
+    "isin": null,
+    "name": "Atlas Copco",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "INVE-B.ST",
+    "symbol_finnhub": "INVE-B.ST",
+    "isin": null,
+    "name": "Investor AB",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VOLV-B.ST",
+    "symbol_finnhub": "VOLV-B.ST",
+    "isin": null,
+    "name": "Volvo",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ERIC-B.ST",
+    "symbol_finnhub": "ERIC-B.ST",
+    "isin": null,
+    "name": "Ericsson",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HM-B.ST",
+    "symbol_finnhub": "HM-B.ST",
+    "isin": null,
+    "name": "H&M Hennes & Mauritz",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NDA-SE.ST",
+    "symbol_finnhub": "NDA-SE.ST",
+    "isin": null,
+    "name": "Nordea Bank",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ASSA-B.ST",
+    "symbol_finnhub": "ASSA-B.ST",
+    "isin": null,
+    "name": "Assa Abloy",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SAND.ST",
+    "symbol_finnhub": "SAND.ST",
+    "isin": null,
+    "name": "Sandvik",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ESSITY-B.ST",
+    "symbol_finnhub": "ESSITY-B.ST",
+    "isin": null,
+    "name": "Essity",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EVO.ST",
+    "symbol_finnhub": "EVO.ST",
+    "isin": null,
+    "name": "Evolution",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "HEXA-B.ST",
+    "symbol_finnhub": "HEXA-B.ST",
+    "isin": null,
+    "name": "Hexagon",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EQT.ST",
+    "symbol_finnhub": "EQT.ST",
+    "isin": null,
+    "name": "EQT",
+    "exchange": "Nasdaq Stockholm",
+    "mic": "XSTO",
+    "country": "SE",
+    "region": "EU",
+    "currency": "SEK",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NOVO-B.CO",
+    "symbol_finnhub": "NOVO-B.CO",
+    "isin": null,
+    "name": "Novo Nordisk",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DSV.CO",
+    "symbol_finnhub": "DSV.CO",
+    "isin": null,
+    "name": "DSV",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MAERSK-B.CO",
+    "symbol_finnhub": "MAERSK-B.CO",
+    "isin": null,
+    "name": "A.P. Møller - Mærsk",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ORSTED.CO",
+    "symbol_finnhub": "ORSTED.CO",
+    "isin": null,
+    "name": "Ørsted",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "CARL-B.CO",
+    "symbol_finnhub": "CARL-B.CO",
+    "isin": null,
+    "name": "Carlsberg",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "COLO-B.CO",
+    "symbol_finnhub": "COLO-B.CO",
+    "isin": null,
+    "name": "Coloplast",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VWS.CO",
+    "symbol_finnhub": "VWS.CO",
+    "isin": null,
+    "name": "Vestas Wind Systems",
+    "exchange": "Nasdaq Copenhagen",
+    "mic": "XCSE",
+    "country": "DK",
+    "region": "EU",
+    "currency": "DKK",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NOKIA.HE",
+    "symbol_finnhub": "NOKIA.HE",
+    "isin": null,
+    "name": "Nokia",
+    "exchange": "Nasdaq Helsinki",
+    "mic": "XHEL",
+    "country": "FI",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Information Technology",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "KNEBV.HE",
+    "symbol_finnhub": "KNEBV.HE",
+    "isin": null,
+    "name": "Kone",
+    "exchange": "Nasdaq Helsinki",
+    "mic": "XHEL",
+    "country": "FI",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SAMPO.HE",
+    "symbol_finnhub": "SAMPO.HE",
+    "isin": null,
+    "name": "Sampo",
+    "exchange": "Nasdaq Helsinki",
+    "mic": "XHEL",
+    "country": "FI",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NESTE.HE",
+    "symbol_finnhub": "NESTE.HE",
+    "isin": null,
+    "name": "Neste",
+    "exchange": "Nasdaq Helsinki",
+    "mic": "XHEL",
+    "country": "FI",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "UPM.HE",
+    "symbol_finnhub": "UPM.HE",
+    "isin": null,
+    "name": "UPM-Kymmene",
+    "exchange": "Nasdaq Helsinki",
+    "mic": "XHEL",
+    "country": "FI",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EQNR.OL",
+    "symbol_finnhub": "EQNR.OL",
+    "isin": null,
+    "name": "Equinor",
+    "exchange": "Oslo Børs",
+    "mic": "XOSL",
+    "country": "NO",
+    "region": "EU",
+    "currency": "NOK",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "DNB.OL",
+    "symbol_finnhub": "DNB.OL",
+    "isin": null,
+    "name": "DNB Bank",
+    "exchange": "Oslo Børs",
+    "mic": "XOSL",
+    "country": "NO",
+    "region": "EU",
+    "currency": "NOK",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "TEL.OL",
+    "symbol_finnhub": "TEL.OL",
+    "isin": null,
+    "name": "Telenor",
+    "exchange": "Oslo Børs",
+    "mic": "XOSL",
+    "country": "NO",
+    "region": "EU",
+    "currency": "NOK",
+    "sector": "Communication Services",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "NHY.OL",
+    "symbol_finnhub": "NHY.OL",
+    "isin": null,
+    "name": "Norsk Hydro",
+    "exchange": "Oslo Børs",
+    "mic": "XOSL",
+    "country": "NO",
+    "region": "EU",
+    "currency": "NOK",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "MOWI.OL",
+    "symbol_finnhub": "MOWI.OL",
+    "isin": null,
+    "name": "Mowi",
+    "exchange": "Oslo Børs",
+    "mic": "XOSL",
+    "country": "NO",
+    "region": "EU",
+    "currency": "NOK",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "AKRBP.OL",
+    "symbol_finnhub": "AKRBP.OL",
+    "isin": null,
+    "name": "Aker BP",
+    "exchange": "Oslo Børs",
+    "mic": "XOSL",
+    "country": "NO",
+    "region": "EU",
+    "currency": "NOK",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "ABI.BR",
+    "symbol_finnhub": "ABI.BR",
+    "isin": null,
+    "name": "Anheuser-Busch InBev",
+    "exchange": "Euronext Brussels",
+    "mic": "XBRU",
+    "country": "BE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "KBC.BR",
+    "symbol_finnhub": "KBC.BR",
+    "isin": null,
+    "name": "KBC Group",
+    "exchange": "Euronext Brussels",
+    "mic": "XBRU",
+    "country": "BE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "UCB.BR",
+    "symbol_finnhub": "UCB.BR",
+    "isin": null,
+    "name": "UCB",
+    "exchange": "Euronext Brussels",
+    "mic": "XBRU",
+    "country": "BE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Health Care",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "SOLB.BR",
+    "symbol_finnhub": "SOLB.BR",
+    "isin": null,
+    "name": "Solvay",
+    "exchange": "Euronext Brussels",
+    "mic": "XBRU",
+    "country": "BE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GBLB.BR",
+    "symbol_finnhub": "GBLB.BR",
+    "isin": null,
+    "name": "Groupe Bruxelles Lambert",
+    "exchange": "Euronext Brussels",
+    "mic": "XBRU",
+    "country": "BE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "UMI.BR",
+    "symbol_finnhub": "UMI.BR",
+    "isin": null,
+    "name": "Umicore",
+    "exchange": "Euronext Brussels",
+    "mic": "XBRU",
+    "country": "BE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Materials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EDP.LS",
+    "symbol_finnhub": "EDP.LS",
+    "isin": null,
+    "name": "EDP - Energias de Portugal",
+    "exchange": "Euronext Lisbon",
+    "mic": "XLIS",
+    "country": "PT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "GALP.LS",
+    "symbol_finnhub": "GALP.LS",
+    "isin": null,
+    "name": "Galp Energia",
+    "exchange": "Euronext Lisbon",
+    "mic": "XLIS",
+    "country": "PT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "JMT.LS",
+    "symbol_finnhub": "JMT.LS",
+    "isin": null,
+    "name": "Jerónimo Martins",
+    "exchange": "Euronext Lisbon",
+    "mic": "XLIS",
+    "country": "PT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "RYA.IR",
+    "symbol_finnhub": "RYA.IR",
+    "isin": null,
+    "name": "Ryanair Holdings",
+    "exchange": "Euronext Dublin",
+    "mic": "XDUB",
+    "country": "IE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "KRZ.IR",
+    "symbol_finnhub": "KRZ.IR",
+    "isin": null,
+    "name": "Kerry Group",
+    "exchange": "Euronext Dublin",
+    "mic": "XDUB",
+    "country": "IE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "KRX.IR",
+    "symbol_finnhub": "KRX.IR",
+    "isin": null,
+    "name": "Kingspan Group",
+    "exchange": "Euronext Dublin",
+    "mic": "XDUB",
+    "country": "IE",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Industrials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "OMV.VI",
+    "symbol_finnhub": "OMV.VI",
+    "isin": null,
+    "name": "OMV",
+    "exchange": "Wiener Börse",
+    "mic": "XWBO",
+    "country": "AT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Energy",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "EBS.VI",
+    "symbol_finnhub": "EBS.VI",
+    "isin": null,
+    "name": "Erste Group Bank",
+    "exchange": "Wiener Börse",
+    "mic": "XWBO",
+    "country": "AT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Financials",
+    "index_membership": [
+      "STOXX600"
+    ]
+  },
+  {
+    "symbol_yahoo": "VER.VI",
+    "symbol_finnhub": "VER.VI",
+    "isin": null,
+    "name": "Verbund",
+    "exchange": "Wiener Börse",
+    "mic": "XWBO",
+    "country": "AT",
+    "region": "EU",
+    "currency": "EUR",
+    "sector": "Utilities",
+    "index_membership": [
+      "STOXX600"
+    ]
+  }
+]

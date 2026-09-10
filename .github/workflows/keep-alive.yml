@@ -1,0 +1,19 @@
+name: keep-alive
+# Un petit SELECT toutes les 3 h pour éviter la mise en pause du projet
+# Supabase (free tier : pause après 7 j sans activité).
+on:
+  schedule:
+    - cron: '30 */3 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ping REST
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/securities?select=id&limit=1")
+          echo "HTTP $code"
+          test "$code" = "200"

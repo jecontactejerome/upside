@@ -1,0 +1,12 @@
+{
+  "name": "upside",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Suivi du potentiel de croissance boursier vs objectifs analystes.",
+  "scripts": {
+    "dev": "npm run dev --prefix web",
+    "build": "npm run build --prefix web",
+    "ingest:all": "npm run all --prefix ingest",
+    "install:all": "npm install --prefix web && npm install --prefix ingest"
+  }
+}

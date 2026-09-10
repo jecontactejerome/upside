@@ -1,0 +1,28 @@
+name: refresh-news
+on:
+  schedule:
+    - cron: '15 */2 * * *'      # toutes les 2 h
+  workflow_dispatch:
+
+concurrency:
+  group: ingest-news
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: ingest/package-lock.json
+      - run: npm ci
+        working-directory: ingest
+      - run: npm run news
+        working-directory: ingest
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}

@@ -1,0 +1,7547 @@
+[
+  {
+    "symbol_yahoo": "MMM",
+    "symbol_finnhub": "MMM",
+    "isin": null,
+    "name": "3M",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AOS",
+    "symbol_finnhub": "AOS",
+    "isin": null,
+    "name": "A. O. Smith",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ABT",
+    "symbol_finnhub": "ABT",
+    "isin": null,
+    "name": "Abbott Laboratories",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ABBV",
+    "symbol_finnhub": "ABBV",
+    "isin": null,
+    "name": "AbbVie",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ACN",
+    "symbol_finnhub": "ACN",
+    "isin": null,
+    "name": "Accenture",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADBE",
+    "symbol_finnhub": "ADBE",
+    "isin": null,
+    "name": "Adobe Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMD",
+    "symbol_finnhub": "AMD",
+    "isin": null,
+    "name": "Advanced Micro Devices",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AES",
+    "symbol_finnhub": "AES",
+    "isin": null,
+    "name": "AES Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AFL",
+    "symbol_finnhub": "AFL",
+    "isin": null,
+    "name": "Aflac",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "A",
+    "symbol_finnhub": "A",
+    "isin": null,
+    "name": "Agilent Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "APD",
+    "symbol_finnhub": "APD",
+    "isin": null,
+    "name": "Air Products",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ABNB",
+    "symbol_finnhub": "ABNB",
+    "isin": null,
+    "name": "Airbnb",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AKAM",
+    "symbol_finnhub": "AKAM",
+    "isin": null,
+    "name": "Akamai Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ALB",
+    "symbol_finnhub": "ALB",
+    "isin": null,
+    "name": "Albemarle Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ARE",
+    "symbol_finnhub": "ARE",
+    "isin": null,
+    "name": "Alexandria Real Estate Equities",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ALGN",
+    "symbol_finnhub": "ALGN",
+    "isin": null,
+    "name": "Align Technology",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ALLE",
+    "symbol_finnhub": "ALLE",
+    "isin": null,
+    "name": "Allegion",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LNT",
+    "symbol_finnhub": "LNT",
+    "isin": null,
+    "name": "Alliant Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ALL",
+    "symbol_finnhub": "ALL",
+    "isin": null,
+    "name": "Allstate",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GOOGL",
+    "symbol_finnhub": "GOOGL",
+    "isin": null,
+    "name": "Alphabet Inc. (Class A)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GOOG",
+    "symbol_finnhub": "GOOG",
+    "isin": null,
+    "name": "Alphabet Inc. (Class C)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MO",
+    "symbol_finnhub": "MO",
+    "isin": null,
+    "name": "Altria",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMZN",
+    "symbol_finnhub": "AMZN",
+    "isin": null,
+    "name": "Amazon",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMCR",
+    "symbol_finnhub": "AMCR",
+    "isin": null,
+    "name": "Amcor",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AEE",
+    "symbol_finnhub": "AEE",
+    "isin": null,
+    "name": "Ameren",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AEP",
+    "symbol_finnhub": "AEP",
+    "isin": null,
+    "name": "American Electric Power",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AXP",
+    "symbol_finnhub": "AXP",
+    "isin": null,
+    "name": "American Express",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AIG",
+    "symbol_finnhub": "AIG",
+    "isin": null,
+    "name": "American International Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMT",
+    "symbol_finnhub": "AMT",
+    "isin": null,
+    "name": "American Tower",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AWK",
+    "symbol_finnhub": "AWK",
+    "isin": null,
+    "name": "American Water Works",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMP",
+    "symbol_finnhub": "AMP",
+    "isin": null,
+    "name": "Ameriprise Financial",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AME",
+    "symbol_finnhub": "AME",
+    "isin": null,
+    "name": "Ametek",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMGN",
+    "symbol_finnhub": "AMGN",
+    "isin": null,
+    "name": "Amgen",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "APH",
+    "symbol_finnhub": "APH",
+    "isin": null,
+    "name": "Amphenol",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADI",
+    "symbol_finnhub": "ADI",
+    "isin": null,
+    "name": "Analog Devices",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AON",
+    "symbol_finnhub": "AON",
+    "isin": null,
+    "name": "Aon plc",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "APA",
+    "symbol_finnhub": "APA",
+    "isin": null,
+    "name": "APA Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "APO",
+    "symbol_finnhub": "APO",
+    "isin": null,
+    "name": "Apollo Global Management",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AAPL",
+    "symbol_finnhub": "AAPL",
+    "isin": null,
+    "name": "Apple Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AMAT",
+    "symbol_finnhub": "AMAT",
+    "isin": null,
+    "name": "Applied Materials",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "APP",
+    "symbol_finnhub": "APP",
+    "isin": null,
+    "name": "AppLovin",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "APTV",
+    "symbol_finnhub": "APTV",
+    "isin": null,
+    "name": "Aptiv",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ACGL",
+    "symbol_finnhub": "ACGL",
+    "isin": null,
+    "name": "Arch Capital Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADM",
+    "symbol_finnhub": "ADM",
+    "isin": null,
+    "name": "Archer Daniels Midland",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ARES",
+    "symbol_finnhub": "ARES",
+    "isin": null,
+    "name": "Ares Management",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ANET",
+    "symbol_finnhub": "ANET",
+    "isin": null,
+    "name": "Arista Networks",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AJG",
+    "symbol_finnhub": "AJG",
+    "isin": null,
+    "name": "Arthur J. Gallagher & Co.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AIZ",
+    "symbol_finnhub": "AIZ",
+    "isin": null,
+    "name": "Assurant",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "T",
+    "symbol_finnhub": "T",
+    "isin": null,
+    "name": "AT&T",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ATO",
+    "symbol_finnhub": "ATO",
+    "isin": null,
+    "name": "Atmos Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADSK",
+    "symbol_finnhub": "ADSK",
+    "isin": null,
+    "name": "Autodesk",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ADP",
+    "symbol_finnhub": "ADP",
+    "isin": null,
+    "name": "Automatic Data Processing",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AZO",
+    "symbol_finnhub": "AZO",
+    "isin": null,
+    "name": "AutoZone",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AVY",
+    "symbol_finnhub": "AVY",
+    "isin": null,
+    "name": "Avery Dennison",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AXON",
+    "symbol_finnhub": "AXON",
+    "isin": null,
+    "name": "Axon Enterprise",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BKR",
+    "symbol_finnhub": "BKR",
+    "isin": null,
+    "name": "Baker Hughes",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BALL",
+    "symbol_finnhub": "BALL",
+    "isin": null,
+    "name": "Ball Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BAC",
+    "symbol_finnhub": "BAC",
+    "isin": null,
+    "name": "Bank of America",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BAX",
+    "symbol_finnhub": "BAX",
+    "isin": null,
+    "name": "Baxter International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BDX",
+    "symbol_finnhub": "BDX",
+    "isin": null,
+    "name": "Becton Dickinson",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BRK-B",
+    "symbol_finnhub": "BRK-B",
+    "isin": null,
+    "name": "Berkshire Hathaway",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BBY",
+    "symbol_finnhub": "BBY",
+    "isin": null,
+    "name": "Best Buy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TECH",
+    "symbol_finnhub": "TECH",
+    "isin": null,
+    "name": "Bio-Techne",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BIIB",
+    "symbol_finnhub": "BIIB",
+    "isin": null,
+    "name": "Biogen",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BLK",
+    "symbol_finnhub": "BLK",
+    "isin": null,
+    "name": "BlackRock",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BX",
+    "symbol_finnhub": "BX",
+    "isin": null,
+    "name": "Blackstone Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "XYZ",
+    "symbol_finnhub": "XYZ",
+    "isin": null,
+    "name": "Block, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BNY",
+    "symbol_finnhub": "BNY",
+    "isin": null,
+    "name": "BNY Mellon",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BA",
+    "symbol_finnhub": "BA",
+    "isin": null,
+    "name": "Boeing",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BKNG",
+    "symbol_finnhub": "BKNG",
+    "isin": null,
+    "name": "Booking Holdings",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BSX",
+    "symbol_finnhub": "BSX",
+    "isin": null,
+    "name": "Boston Scientific",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BMY",
+    "symbol_finnhub": "BMY",
+    "isin": null,
+    "name": "Bristol Myers Squibb",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "AVGO",
+    "symbol_finnhub": "AVGO",
+    "isin": null,
+    "name": "Broadcom",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BR",
+    "symbol_finnhub": "BR",
+    "isin": null,
+    "name": "Broadridge Financial Solutions",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BRO",
+    "symbol_finnhub": "BRO",
+    "isin": null,
+    "name": "Brown & Brown",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BF-B",
+    "symbol_finnhub": "BF-B",
+    "isin": null,
+    "name": "Brown–Forman",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BLDR",
+    "symbol_finnhub": "BLDR",
+    "isin": null,
+    "name": "Builders FirstSource",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BG",
+    "symbol_finnhub": "BG",
+    "isin": null,
+    "name": "Bunge Global",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BXP",
+    "symbol_finnhub": "BXP",
+    "isin": null,
+    "name": "BXP, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CHRW",
+    "symbol_finnhub": "CHRW",
+    "isin": null,
+    "name": "C.H. Robinson",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CDNS",
+    "symbol_finnhub": "CDNS",
+    "isin": null,
+    "name": "Cadence Design Systems",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CPT",
+    "symbol_finnhub": "CPT",
+    "isin": null,
+    "name": "Camden Property Trust",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COF",
+    "symbol_finnhub": "COF",
+    "isin": null,
+    "name": "Capital One",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CAH",
+    "symbol_finnhub": "CAH",
+    "isin": null,
+    "name": "Cardinal Health",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CCL",
+    "symbol_finnhub": "CCL",
+    "isin": null,
+    "name": "Carnival Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CARR",
+    "symbol_finnhub": "CARR",
+    "isin": null,
+    "name": "Carrier Global",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CVNA",
+    "symbol_finnhub": "CVNA",
+    "isin": null,
+    "name": "Carvana",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CASY",
+    "symbol_finnhub": "CASY",
+    "isin": null,
+    "name": "Casey's",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CAT",
+    "symbol_finnhub": "CAT",
+    "isin": null,
+    "name": "Caterpillar Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CBOE",
+    "symbol_finnhub": "CBOE",
+    "isin": null,
+    "name": "Cboe Global Markets",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CBRE",
+    "symbol_finnhub": "CBRE",
+    "isin": null,
+    "name": "CBRE Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CDW",
+    "symbol_finnhub": "CDW",
+    "isin": null,
+    "name": "CDW Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COR",
+    "symbol_finnhub": "COR",
+    "isin": null,
+    "name": "Cencora",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CNC",
+    "symbol_finnhub": "CNC",
+    "isin": null,
+    "name": "Centene Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CNP",
+    "symbol_finnhub": "CNP",
+    "isin": null,
+    "name": "CenterPoint Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CF",
+    "symbol_finnhub": "CF",
+    "isin": null,
+    "name": "CF Industries",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CRL",
+    "symbol_finnhub": "CRL",
+    "isin": null,
+    "name": "Charles River Laboratories",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SCHW",
+    "symbol_finnhub": "SCHW",
+    "isin": null,
+    "name": "Charles Schwab Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CHTR",
+    "symbol_finnhub": "CHTR",
+    "isin": null,
+    "name": "Charter Communications",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CVX",
+    "symbol_finnhub": "CVX",
+    "isin": null,
+    "name": "Chevron Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CMG",
+    "symbol_finnhub": "CMG",
+    "isin": null,
+    "name": "Chipotle Mexican Grill",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CB",
+    "symbol_finnhub": "CB",
+    "isin": null,
+    "name": "Chubb Limited",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CHD",
+    "symbol_finnhub": "CHD",
+    "isin": null,
+    "name": "Church & Dwight",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CIEN",
+    "symbol_finnhub": "CIEN",
+    "isin": null,
+    "name": "Ciena",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CI",
+    "symbol_finnhub": "CI",
+    "isin": null,
+    "name": "Cigna",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CINF",
+    "symbol_finnhub": "CINF",
+    "isin": null,
+    "name": "Cincinnati Financial",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CTAS",
+    "symbol_finnhub": "CTAS",
+    "isin": null,
+    "name": "Cintas",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CSCO",
+    "symbol_finnhub": "CSCO",
+    "isin": null,
+    "name": "Cisco",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "C",
+    "symbol_finnhub": "C",
+    "isin": null,
+    "name": "Citigroup",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CFG",
+    "symbol_finnhub": "CFG",
+    "isin": null,
+    "name": "Citizens Financial Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CLX",
+    "symbol_finnhub": "CLX",
+    "isin": null,
+    "name": "Clorox",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CME",
+    "symbol_finnhub": "CME",
+    "isin": null,
+    "name": "CME Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CMS",
+    "symbol_finnhub": "CMS",
+    "isin": null,
+    "name": "CMS Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KO",
+    "symbol_finnhub": "KO",
+    "isin": null,
+    "name": "Coca-Cola Company (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CTSH",
+    "symbol_finnhub": "CTSH",
+    "isin": null,
+    "name": "Cognizant",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COHR",
+    "symbol_finnhub": "COHR",
+    "isin": null,
+    "name": "Coherent Corp.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COIN",
+    "symbol_finnhub": "COIN",
+    "isin": null,
+    "name": "Coinbase",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CL",
+    "symbol_finnhub": "CL",
+    "isin": null,
+    "name": "Colgate-Palmolive",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CMCSA",
+    "symbol_finnhub": "CMCSA",
+    "isin": null,
+    "name": "Comcast",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FIX",
+    "symbol_finnhub": "FIX",
+    "isin": null,
+    "name": "Comfort Systems USA",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COP",
+    "symbol_finnhub": "COP",
+    "isin": null,
+    "name": "ConocoPhillips",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ED",
+    "symbol_finnhub": "ED",
+    "isin": null,
+    "name": "Consolidated Edison",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "STZ",
+    "symbol_finnhub": "STZ",
+    "isin": null,
+    "name": "Constellation Brands",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CEG",
+    "symbol_finnhub": "CEG",
+    "isin": null,
+    "name": "Constellation Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COO",
+    "symbol_finnhub": "COO",
+    "isin": null,
+    "name": "Cooper Companies (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CPRT",
+    "symbol_finnhub": "CPRT",
+    "isin": null,
+    "name": "Copart",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GLW",
+    "symbol_finnhub": "GLW",
+    "isin": null,
+    "name": "Corning Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CPAY",
+    "symbol_finnhub": "CPAY",
+    "isin": null,
+    "name": "Corpay",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CTVA",
+    "symbol_finnhub": "CTVA",
+    "isin": null,
+    "name": "Corteva",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CSGP",
+    "symbol_finnhub": "CSGP",
+    "isin": null,
+    "name": "CoStar Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "COST",
+    "symbol_finnhub": "COST",
+    "isin": null,
+    "name": "Costco",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CRH",
+    "symbol_finnhub": "CRH",
+    "isin": null,
+    "name": "CRH plc",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CRWD",
+    "symbol_finnhub": "CRWD",
+    "isin": null,
+    "name": "CrowdStrike",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CCI",
+    "symbol_finnhub": "CCI",
+    "isin": null,
+    "name": "Crown Castle",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CSX",
+    "symbol_finnhub": "CSX",
+    "isin": null,
+    "name": "CSX Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CMI",
+    "symbol_finnhub": "CMI",
+    "isin": null,
+    "name": "Cummins",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CVS",
+    "symbol_finnhub": "CVS",
+    "isin": null,
+    "name": "CVS Health",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DHR",
+    "symbol_finnhub": "DHR",
+    "isin": null,
+    "name": "Danaher Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DRI",
+    "symbol_finnhub": "DRI",
+    "isin": null,
+    "name": "Darden Restaurants",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DDOG",
+    "symbol_finnhub": "DDOG",
+    "isin": null,
+    "name": "Datadog",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DVA",
+    "symbol_finnhub": "DVA",
+    "isin": null,
+    "name": "DaVita",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DECK",
+    "symbol_finnhub": "DECK",
+    "isin": null,
+    "name": "Deckers Brands",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DE",
+    "symbol_finnhub": "DE",
+    "isin": null,
+    "name": "Deere & Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DELL",
+    "symbol_finnhub": "DELL",
+    "isin": null,
+    "name": "Dell Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DAL",
+    "symbol_finnhub": "DAL",
+    "isin": null,
+    "name": "Delta Air Lines",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DVN",
+    "symbol_finnhub": "DVN",
+    "isin": null,
+    "name": "Devon Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DXCM",
+    "symbol_finnhub": "DXCM",
+    "isin": null,
+    "name": "Dexcom",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FANG",
+    "symbol_finnhub": "FANG",
+    "isin": null,
+    "name": "Diamondback Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DLR",
+    "symbol_finnhub": "DLR",
+    "isin": null,
+    "name": "Digital Realty",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DG",
+    "symbol_finnhub": "DG",
+    "isin": null,
+    "name": "Dollar General",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DLTR",
+    "symbol_finnhub": "DLTR",
+    "isin": null,
+    "name": "Dollar Tree",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "D",
+    "symbol_finnhub": "D",
+    "isin": null,
+    "name": "Dominion Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DPZ",
+    "symbol_finnhub": "DPZ",
+    "isin": null,
+    "name": "Domino's",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DASH",
+    "symbol_finnhub": "DASH",
+    "isin": null,
+    "name": "DoorDash",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DOV",
+    "symbol_finnhub": "DOV",
+    "isin": null,
+    "name": "Dover Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DOW",
+    "symbol_finnhub": "DOW",
+    "isin": null,
+    "name": "Dow Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DHI",
+    "symbol_finnhub": "DHI",
+    "isin": null,
+    "name": "D. R. Horton",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DTE",
+    "symbol_finnhub": "DTE",
+    "isin": null,
+    "name": "DTE Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DUK",
+    "symbol_finnhub": "DUK",
+    "isin": null,
+    "name": "Duke Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DD",
+    "symbol_finnhub": "DD",
+    "isin": null,
+    "name": "DuPont",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ETN",
+    "symbol_finnhub": "ETN",
+    "isin": null,
+    "name": "Eaton Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EBAY",
+    "symbol_finnhub": "EBAY",
+    "isin": null,
+    "name": "eBay Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ECHO",
+    "symbol_finnhub": "ECHO",
+    "isin": null,
+    "name": "EchoStar",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ECL",
+    "symbol_finnhub": "ECL",
+    "isin": null,
+    "name": "Ecolab",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EIX",
+    "symbol_finnhub": "EIX",
+    "isin": null,
+    "name": "Edison International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EW",
+    "symbol_finnhub": "EW",
+    "isin": null,
+    "name": "Edwards Lifesciences",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ELV",
+    "symbol_finnhub": "ELV",
+    "isin": null,
+    "name": "Elevance Health",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EME",
+    "symbol_finnhub": "EME",
+    "isin": null,
+    "name": "Emcor",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EMR",
+    "symbol_finnhub": "EMR",
+    "isin": null,
+    "name": "Emerson Electric",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ETR",
+    "symbol_finnhub": "ETR",
+    "isin": null,
+    "name": "Entergy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EOG",
+    "symbol_finnhub": "EOG",
+    "isin": null,
+    "name": "EOG Resources",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EQT",
+    "symbol_finnhub": "EQT",
+    "isin": null,
+    "name": "EQT Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EFX",
+    "symbol_finnhub": "EFX",
+    "isin": null,
+    "name": "Equifax",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EQIX",
+    "symbol_finnhub": "EQIX",
+    "isin": null,
+    "name": "Equinix",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ERIE",
+    "symbol_finnhub": "ERIE",
+    "isin": null,
+    "name": "Erie Indemnity",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ESS",
+    "symbol_finnhub": "ESS",
+    "isin": null,
+    "name": "Essex Property Trust",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EL",
+    "symbol_finnhub": "EL",
+    "isin": null,
+    "name": "Estée Lauder Companies (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EG",
+    "symbol_finnhub": "EG",
+    "isin": null,
+    "name": "Everest Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EVRG",
+    "symbol_finnhub": "EVRG",
+    "isin": null,
+    "name": "Evergy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ES",
+    "symbol_finnhub": "ES",
+    "isin": null,
+    "name": "Eversource Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EXC",
+    "symbol_finnhub": "EXC",
+    "isin": null,
+    "name": "Exelon",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EXE",
+    "symbol_finnhub": "EXE",
+    "isin": null,
+    "name": "Expand Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EXPE",
+    "symbol_finnhub": "EXPE",
+    "isin": null,
+    "name": "Expedia Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EXPD",
+    "symbol_finnhub": "EXPD",
+    "isin": null,
+    "name": "Expeditors International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "EXR",
+    "symbol_finnhub": "EXR",
+    "isin": null,
+    "name": "Extra Space Storage",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "XOM",
+    "symbol_finnhub": "XOM",
+    "isin": null,
+    "name": "ExxonMobil",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FFIV",
+    "symbol_finnhub": "FFIV",
+    "isin": null,
+    "name": "F5, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FDS",
+    "symbol_finnhub": "FDS",
+    "isin": null,
+    "name": "FactSet",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FICO",
+    "symbol_finnhub": "FICO",
+    "isin": null,
+    "name": "Fair Isaac",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FAST",
+    "symbol_finnhub": "FAST",
+    "isin": null,
+    "name": "Fastenal",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FRT",
+    "symbol_finnhub": "FRT",
+    "isin": null,
+    "name": "Federal Realty Investment Trust",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FDX",
+    "symbol_finnhub": "FDX",
+    "isin": null,
+    "name": "FedEx",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FDXF",
+    "symbol_finnhub": "FDXF",
+    "isin": null,
+    "name": "FedEx Freight",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FERG",
+    "symbol_finnhub": "FERG",
+    "isin": null,
+    "name": "Ferguson Enterprises",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FIS",
+    "symbol_finnhub": "FIS",
+    "isin": null,
+    "name": "Fidelity National Information Services",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FITB",
+    "symbol_finnhub": "FITB",
+    "isin": null,
+    "name": "Fifth Third Bancorp",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FSLR",
+    "symbol_finnhub": "FSLR",
+    "isin": null,
+    "name": "First Solar",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FE",
+    "symbol_finnhub": "FE",
+    "isin": null,
+    "name": "FirstEnergy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FISV",
+    "symbol_finnhub": "FISV",
+    "isin": null,
+    "name": "Fiserv",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FLEX",
+    "symbol_finnhub": "FLEX",
+    "isin": null,
+    "name": "Flex Ltd.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "F",
+    "symbol_finnhub": "F",
+    "isin": null,
+    "name": "Ford Motor Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FTNT",
+    "symbol_finnhub": "FTNT",
+    "isin": null,
+    "name": "Fortinet",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FTV",
+    "symbol_finnhub": "FTV",
+    "isin": null,
+    "name": "Fortive",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FOXA",
+    "symbol_finnhub": "FOXA",
+    "isin": null,
+    "name": "Fox Corporation (Class A)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FOX",
+    "symbol_finnhub": "FOX",
+    "isin": null,
+    "name": "Fox Corporation (Class B)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "BEN",
+    "symbol_finnhub": "BEN",
+    "isin": null,
+    "name": "Franklin Resources",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "FCX",
+    "symbol_finnhub": "FCX",
+    "isin": null,
+    "name": "Freeport-McMoRan",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GRMN",
+    "symbol_finnhub": "GRMN",
+    "isin": null,
+    "name": "Garmin",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IT",
+    "symbol_finnhub": "IT",
+    "isin": null,
+    "name": "Gartner",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GE",
+    "symbol_finnhub": "GE",
+    "isin": null,
+    "name": "GE Aerospace",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GEHC",
+    "symbol_finnhub": "GEHC",
+    "isin": null,
+    "name": "GE HealthCare",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GEV",
+    "symbol_finnhub": "GEV",
+    "isin": null,
+    "name": "GE Vernova",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GEN",
+    "symbol_finnhub": "GEN",
+    "isin": null,
+    "name": "Gen Digital",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GNRC",
+    "symbol_finnhub": "GNRC",
+    "isin": null,
+    "name": "Generac",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GD",
+    "symbol_finnhub": "GD",
+    "isin": null,
+    "name": "General Dynamics",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GIS",
+    "symbol_finnhub": "GIS",
+    "isin": null,
+    "name": "General Mills",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GM",
+    "symbol_finnhub": "GM",
+    "isin": null,
+    "name": "General Motors",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GPC",
+    "symbol_finnhub": "GPC",
+    "isin": null,
+    "name": "Genuine Parts Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GILD",
+    "symbol_finnhub": "GILD",
+    "isin": null,
+    "name": "Gilead Sciences",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GPN",
+    "symbol_finnhub": "GPN",
+    "isin": null,
+    "name": "Global Payments",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GL",
+    "symbol_finnhub": "GL",
+    "isin": null,
+    "name": "Globe Life",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GDDY",
+    "symbol_finnhub": "GDDY",
+    "isin": null,
+    "name": "GoDaddy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GS",
+    "symbol_finnhub": "GS",
+    "isin": null,
+    "name": "Goldman Sachs",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HAL",
+    "symbol_finnhub": "HAL",
+    "isin": null,
+    "name": "Halliburton",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HIG",
+    "symbol_finnhub": "HIG",
+    "isin": null,
+    "name": "Hartford (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HAS",
+    "symbol_finnhub": "HAS",
+    "isin": null,
+    "name": "Hasbro",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HCA",
+    "symbol_finnhub": "HCA",
+    "isin": null,
+    "name": "HCA Healthcare",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DOC",
+    "symbol_finnhub": "DOC",
+    "isin": null,
+    "name": "Healthpeak Properties",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HSIC",
+    "symbol_finnhub": "HSIC",
+    "isin": null,
+    "name": "Henry Schein",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HSY",
+    "symbol_finnhub": "HSY",
+    "isin": null,
+    "name": "Hershey Company (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HPE",
+    "symbol_finnhub": "HPE",
+    "isin": null,
+    "name": "Hewlett Packard Enterprise",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HLT",
+    "symbol_finnhub": "HLT",
+    "isin": null,
+    "name": "Hilton Worldwide",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HD",
+    "symbol_finnhub": "HD",
+    "isin": null,
+    "name": "Home Depot (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HONA",
+    "symbol_finnhub": "HONA",
+    "isin": null,
+    "name": "Honeywell Aerospace",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HON",
+    "symbol_finnhub": "HON",
+    "isin": null,
+    "name": "Honeywell Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HRL",
+    "symbol_finnhub": "HRL",
+    "isin": null,
+    "name": "Hormel Foods",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HST",
+    "symbol_finnhub": "HST",
+    "isin": null,
+    "name": "Host Hotels & Resorts",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HWM",
+    "symbol_finnhub": "HWM",
+    "isin": null,
+    "name": "Howmet Aerospace",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HPQ",
+    "symbol_finnhub": "HPQ",
+    "isin": null,
+    "name": "HP Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HUBB",
+    "symbol_finnhub": "HUBB",
+    "isin": null,
+    "name": "Hubbell Incorporated",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HUM",
+    "symbol_finnhub": "HUM",
+    "isin": null,
+    "name": "Humana",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HBAN",
+    "symbol_finnhub": "HBAN",
+    "isin": null,
+    "name": "Huntington Bancshares",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HII",
+    "symbol_finnhub": "HII",
+    "isin": null,
+    "name": "Huntington Ingalls Industries",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IBM",
+    "symbol_finnhub": "IBM",
+    "isin": null,
+    "name": "IBM",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IEX",
+    "symbol_finnhub": "IEX",
+    "isin": null,
+    "name": "IDEX Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IDXX",
+    "symbol_finnhub": "IDXX",
+    "isin": null,
+    "name": "Idexx Laboratories",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ITW",
+    "symbol_finnhub": "ITW",
+    "isin": null,
+    "name": "Illinois Tool Works",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "INCY",
+    "symbol_finnhub": "INCY",
+    "isin": null,
+    "name": "Incyte",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IR",
+    "symbol_finnhub": "IR",
+    "isin": null,
+    "name": "Ingersoll Rand",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PODD",
+    "symbol_finnhub": "PODD",
+    "isin": null,
+    "name": "Insulet Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "INTC",
+    "symbol_finnhub": "INTC",
+    "isin": null,
+    "name": "Intel",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IBKR",
+    "symbol_finnhub": "IBKR",
+    "isin": null,
+    "name": "Interactive Brokers",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ICE",
+    "symbol_finnhub": "ICE",
+    "isin": null,
+    "name": "Intercontinental Exchange",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IFF",
+    "symbol_finnhub": "IFF",
+    "isin": null,
+    "name": "International Flavors & Fragrances",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IP",
+    "symbol_finnhub": "IP",
+    "isin": null,
+    "name": "International Paper",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "INTU",
+    "symbol_finnhub": "INTU",
+    "isin": null,
+    "name": "Intuit",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ISRG",
+    "symbol_finnhub": "ISRG",
+    "isin": null,
+    "name": "Intuitive Surgical",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IVZ",
+    "symbol_finnhub": "IVZ",
+    "isin": null,
+    "name": "Invesco",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "INVH",
+    "symbol_finnhub": "INVH",
+    "isin": null,
+    "name": "Invitation Homes",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IQV",
+    "symbol_finnhub": "IQV",
+    "isin": null,
+    "name": "IQVIA",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "IRM",
+    "symbol_finnhub": "IRM",
+    "isin": null,
+    "name": "Iron Mountain",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "JBHT",
+    "symbol_finnhub": "JBHT",
+    "isin": null,
+    "name": "J.B. Hunt",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "JBL",
+    "symbol_finnhub": "JBL",
+    "isin": null,
+    "name": "Jabil",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "JKHY",
+    "symbol_finnhub": "JKHY",
+    "isin": null,
+    "name": "Jack Henry & Associates",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "J",
+    "symbol_finnhub": "J",
+    "isin": null,
+    "name": "Jacobs Solutions",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "JNJ",
+    "symbol_finnhub": "JNJ",
+    "isin": null,
+    "name": "Johnson & Johnson",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "JCI",
+    "symbol_finnhub": "JCI",
+    "isin": null,
+    "name": "Johnson Controls",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "JPM",
+    "symbol_finnhub": "JPM",
+    "isin": null,
+    "name": "JPMorgan Chase",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KVUE",
+    "symbol_finnhub": "KVUE",
+    "isin": null,
+    "name": "Kenvue",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KDP",
+    "symbol_finnhub": "KDP",
+    "isin": null,
+    "name": "Keurig Dr Pepper",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KEY",
+    "symbol_finnhub": "KEY",
+    "isin": null,
+    "name": "KeyCorp",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KEYS",
+    "symbol_finnhub": "KEYS",
+    "isin": null,
+    "name": "Keysight Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KMB",
+    "symbol_finnhub": "KMB",
+    "isin": null,
+    "name": "Kimberly-Clark",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KIM",
+    "symbol_finnhub": "KIM",
+    "isin": null,
+    "name": "Kimco Realty",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KMI",
+    "symbol_finnhub": "KMI",
+    "isin": null,
+    "name": "Kinder Morgan",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KKR",
+    "symbol_finnhub": "KKR",
+    "isin": null,
+    "name": "KKR & Co.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KLAC",
+    "symbol_finnhub": "KLAC",
+    "isin": null,
+    "name": "KLA Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KHC",
+    "symbol_finnhub": "KHC",
+    "isin": null,
+    "name": "Kraft Heinz",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "KR",
+    "symbol_finnhub": "KR",
+    "isin": null,
+    "name": "Kroger",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LHX",
+    "symbol_finnhub": "LHX",
+    "isin": null,
+    "name": "L3Harris",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LH",
+    "symbol_finnhub": "LH",
+    "isin": null,
+    "name": "Labcorp",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LRCX",
+    "symbol_finnhub": "LRCX",
+    "isin": null,
+    "name": "Lam Research",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LVS",
+    "symbol_finnhub": "LVS",
+    "isin": null,
+    "name": "Las Vegas Sands",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LDOS",
+    "symbol_finnhub": "LDOS",
+    "isin": null,
+    "name": "Leidos",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LEN",
+    "symbol_finnhub": "LEN",
+    "isin": null,
+    "name": "Lennar",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LII",
+    "symbol_finnhub": "LII",
+    "isin": null,
+    "name": "Lennox International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LLY",
+    "symbol_finnhub": "LLY",
+    "isin": null,
+    "name": "Lilly (Eli)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LIN",
+    "symbol_finnhub": "LIN",
+    "isin": null,
+    "name": "Linde plc",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LYV",
+    "symbol_finnhub": "LYV",
+    "isin": null,
+    "name": "Live Nation Entertainment",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LMT",
+    "symbol_finnhub": "LMT",
+    "isin": null,
+    "name": "Lockheed Martin",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "L",
+    "symbol_finnhub": "L",
+    "isin": null,
+    "name": "Loews Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LOW",
+    "symbol_finnhub": "LOW",
+    "isin": null,
+    "name": "Lowe's",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LULU",
+    "symbol_finnhub": "LULU",
+    "isin": null,
+    "name": "Lululemon Athletica",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LITE",
+    "symbol_finnhub": "LITE",
+    "isin": null,
+    "name": "Lumentum",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LYB",
+    "symbol_finnhub": "LYB",
+    "isin": null,
+    "name": "LyondellBasell",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MTB",
+    "symbol_finnhub": "MTB",
+    "isin": null,
+    "name": "M&T Bank",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MPC",
+    "symbol_finnhub": "MPC",
+    "isin": null,
+    "name": "Marathon Petroleum",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MAR",
+    "symbol_finnhub": "MAR",
+    "isin": null,
+    "name": "Marriott International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MRSH",
+    "symbol_finnhub": "MRSH",
+    "isin": null,
+    "name": "Marsh McLennan",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MLM",
+    "symbol_finnhub": "MLM",
+    "isin": null,
+    "name": "Martin Marietta Materials",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MRVL",
+    "symbol_finnhub": "MRVL",
+    "isin": null,
+    "name": "Marvell Technology",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MAS",
+    "symbol_finnhub": "MAS",
+    "isin": null,
+    "name": "Masco",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MA",
+    "symbol_finnhub": "MA",
+    "isin": null,
+    "name": "Mastercard",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MKC",
+    "symbol_finnhub": "MKC",
+    "isin": null,
+    "name": "McCormick & Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MCD",
+    "symbol_finnhub": "MCD",
+    "isin": null,
+    "name": "McDonald's",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MCK",
+    "symbol_finnhub": "MCK",
+    "isin": null,
+    "name": "McKesson Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MDT",
+    "symbol_finnhub": "MDT",
+    "isin": null,
+    "name": "Medtronic",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MRK",
+    "symbol_finnhub": "MRK",
+    "isin": null,
+    "name": "Merck & Co.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "META",
+    "symbol_finnhub": "META",
+    "isin": null,
+    "name": "Meta Platforms",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MET",
+    "symbol_finnhub": "MET",
+    "isin": null,
+    "name": "MetLife",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MTD",
+    "symbol_finnhub": "MTD",
+    "isin": null,
+    "name": "Mettler Toledo",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MGM",
+    "symbol_finnhub": "MGM",
+    "isin": null,
+    "name": "MGM Resorts",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MCHP",
+    "symbol_finnhub": "MCHP",
+    "isin": null,
+    "name": "Microchip Technology",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MU",
+    "symbol_finnhub": "MU",
+    "isin": null,
+    "name": "Micron Technology",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MSFT",
+    "symbol_finnhub": "MSFT",
+    "isin": null,
+    "name": "Microsoft",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MAA",
+    "symbol_finnhub": "MAA",
+    "isin": null,
+    "name": "Mid-America Apartment Communities",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MRNA",
+    "symbol_finnhub": "MRNA",
+    "isin": null,
+    "name": "Moderna",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TAP",
+    "symbol_finnhub": "TAP",
+    "isin": null,
+    "name": "Molson Coors Beverage Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MDLZ",
+    "symbol_finnhub": "MDLZ",
+    "isin": null,
+    "name": "Mondelez International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MPWR",
+    "symbol_finnhub": "MPWR",
+    "isin": null,
+    "name": "Monolithic Power Systems",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MNST",
+    "symbol_finnhub": "MNST",
+    "isin": null,
+    "name": "Monster Beverage",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MCO",
+    "symbol_finnhub": "MCO",
+    "isin": null,
+    "name": "Moody's Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MS",
+    "symbol_finnhub": "MS",
+    "isin": null,
+    "name": "Morgan Stanley",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MOS",
+    "symbol_finnhub": "MOS",
+    "isin": null,
+    "name": "Mosaic Company (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MSI",
+    "symbol_finnhub": "MSI",
+    "isin": null,
+    "name": "Motorola Solutions",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "MSCI",
+    "symbol_finnhub": "MSCI",
+    "isin": null,
+    "name": "MSCI",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NDAQ",
+    "symbol_finnhub": "NDAQ",
+    "isin": null,
+    "name": "Nasdaq, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NTAP",
+    "symbol_finnhub": "NTAP",
+    "isin": null,
+    "name": "NetApp",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NFLX",
+    "symbol_finnhub": "NFLX",
+    "isin": null,
+    "name": "Netflix",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NEM",
+    "symbol_finnhub": "NEM",
+    "isin": null,
+    "name": "Newmont",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NWSA",
+    "symbol_finnhub": "NWSA",
+    "isin": null,
+    "name": "News Corp (Class A)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NWS",
+    "symbol_finnhub": "NWS",
+    "isin": null,
+    "name": "News Corp (Class B)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NEE",
+    "symbol_finnhub": "NEE",
+    "isin": null,
+    "name": "NextEra Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NKE",
+    "symbol_finnhub": "NKE",
+    "isin": null,
+    "name": "Nike, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NI",
+    "symbol_finnhub": "NI",
+    "isin": null,
+    "name": "NiSource",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NDSN",
+    "symbol_finnhub": "NDSN",
+    "isin": null,
+    "name": "Nordson Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NSC",
+    "symbol_finnhub": "NSC",
+    "isin": null,
+    "name": "Norfolk Southern",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NTRS",
+    "symbol_finnhub": "NTRS",
+    "isin": null,
+    "name": "Northern Trust",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NOC",
+    "symbol_finnhub": "NOC",
+    "isin": null,
+    "name": "Northrop Grumman",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NCLH",
+    "symbol_finnhub": "NCLH",
+    "isin": null,
+    "name": "Norwegian Cruise Line Holdings",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NRG",
+    "symbol_finnhub": "NRG",
+    "isin": null,
+    "name": "NRG Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NUE",
+    "symbol_finnhub": "NUE",
+    "isin": null,
+    "name": "Nucor",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NVDA",
+    "symbol_finnhub": "NVDA",
+    "isin": null,
+    "name": "Nvidia",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NVR",
+    "symbol_finnhub": "NVR",
+    "isin": null,
+    "name": "NVR, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NXPI",
+    "symbol_finnhub": "NXPI",
+    "isin": null,
+    "name": "NXP Semiconductors",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ORLY",
+    "symbol_finnhub": "ORLY",
+    "isin": null,
+    "name": "O'Reilly Automotive",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "OXY",
+    "symbol_finnhub": "OXY",
+    "isin": null,
+    "name": "Occidental Petroleum",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ODFL",
+    "symbol_finnhub": "ODFL",
+    "isin": null,
+    "name": "Old Dominion",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "OMC",
+    "symbol_finnhub": "OMC",
+    "isin": null,
+    "name": "Omnicom Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ON",
+    "symbol_finnhub": "ON",
+    "isin": null,
+    "name": "ON Semiconductor",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "OKE",
+    "symbol_finnhub": "OKE",
+    "isin": null,
+    "name": "Oneok",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ORCL",
+    "symbol_finnhub": "ORCL",
+    "isin": null,
+    "name": "Oracle Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "OTIS",
+    "symbol_finnhub": "OTIS",
+    "isin": null,
+    "name": "Otis Worldwide",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PCAR",
+    "symbol_finnhub": "PCAR",
+    "isin": null,
+    "name": "Paccar",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PKG",
+    "symbol_finnhub": "PKG",
+    "isin": null,
+    "name": "Packaging Corporation of America",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PLTR",
+    "symbol_finnhub": "PLTR",
+    "isin": null,
+    "name": "Palantir Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PANW",
+    "symbol_finnhub": "PANW",
+    "isin": null,
+    "name": "Palo Alto Networks",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PSKY",
+    "symbol_finnhub": "PSKY",
+    "isin": null,
+    "name": "Paramount Skydance Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PH",
+    "symbol_finnhub": "PH",
+    "isin": null,
+    "name": "Parker Hannifin",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PAYX",
+    "symbol_finnhub": "PAYX",
+    "isin": null,
+    "name": "Paychex",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PYPL",
+    "symbol_finnhub": "PYPL",
+    "isin": null,
+    "name": "PayPal",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PNR",
+    "symbol_finnhub": "PNR",
+    "isin": null,
+    "name": "Pentair",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PEP",
+    "symbol_finnhub": "PEP",
+    "isin": null,
+    "name": "PepsiCo",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PFE",
+    "symbol_finnhub": "PFE",
+    "isin": null,
+    "name": "Pfizer",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PCG",
+    "symbol_finnhub": "PCG",
+    "isin": null,
+    "name": "PG&E Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PM",
+    "symbol_finnhub": "PM",
+    "isin": null,
+    "name": "Philip Morris International",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PSX",
+    "symbol_finnhub": "PSX",
+    "isin": null,
+    "name": "Phillips 66",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PNW",
+    "symbol_finnhub": "PNW",
+    "isin": null,
+    "name": "Pinnacle West Capital",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PNC",
+    "symbol_finnhub": "PNC",
+    "isin": null,
+    "name": "PNC Financial Services",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PPG",
+    "symbol_finnhub": "PPG",
+    "isin": null,
+    "name": "PPG Industries",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PPL",
+    "symbol_finnhub": "PPL",
+    "isin": null,
+    "name": "PPL Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PFG",
+    "symbol_finnhub": "PFG",
+    "isin": null,
+    "name": "Principal Financial Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PG",
+    "symbol_finnhub": "PG",
+    "isin": null,
+    "name": "Procter & Gamble",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PGR",
+    "symbol_finnhub": "PGR",
+    "isin": null,
+    "name": "Progressive Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PLD",
+    "symbol_finnhub": "PLD",
+    "isin": null,
+    "name": "Prologis",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PRU",
+    "symbol_finnhub": "PRU",
+    "isin": null,
+    "name": "Prudential Financial",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PEG",
+    "symbol_finnhub": "PEG",
+    "isin": null,
+    "name": "Public Service Enterprise Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PTC",
+    "symbol_finnhub": "PTC",
+    "isin": null,
+    "name": "PTC Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PSA",
+    "symbol_finnhub": "PSA",
+    "isin": null,
+    "name": "Public Storage",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PHM",
+    "symbol_finnhub": "PHM",
+    "isin": null,
+    "name": "PulteGroup",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "PWR",
+    "symbol_finnhub": "PWR",
+    "isin": null,
+    "name": "Quanta Services",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "QCOM",
+    "symbol_finnhub": "QCOM",
+    "isin": null,
+    "name": "Qualcomm",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DGX",
+    "symbol_finnhub": "DGX",
+    "isin": null,
+    "name": "Quest Diagnostics",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "Q",
+    "symbol_finnhub": "Q",
+    "isin": null,
+    "name": "Qnity Electronics",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RL",
+    "symbol_finnhub": "RL",
+    "isin": null,
+    "name": "Ralph Lauren Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RJF",
+    "symbol_finnhub": "RJF",
+    "isin": null,
+    "name": "Raymond James Financial",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RDDT",
+    "symbol_finnhub": "RDDT",
+    "isin": null,
+    "name": "Reddit",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RTX",
+    "symbol_finnhub": "RTX",
+    "isin": null,
+    "name": "RTX Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "O",
+    "symbol_finnhub": "O",
+    "isin": null,
+    "name": "Realty Income",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "REG",
+    "symbol_finnhub": "REG",
+    "isin": null,
+    "name": "Regency Centers",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "REGN",
+    "symbol_finnhub": "REGN",
+    "isin": null,
+    "name": "Regeneron Pharmaceuticals",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RF",
+    "symbol_finnhub": "RF",
+    "isin": null,
+    "name": "Regions Financial Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RSG",
+    "symbol_finnhub": "RSG",
+    "isin": null,
+    "name": "Republic Services",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RMD",
+    "symbol_finnhub": "RMD",
+    "isin": null,
+    "name": "ResMed|",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RVTY",
+    "symbol_finnhub": "RVTY",
+    "isin": null,
+    "name": "Revvity",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "HOOD",
+    "symbol_finnhub": "HOOD",
+    "isin": null,
+    "name": "Robinhood Markets",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ROK",
+    "symbol_finnhub": "ROK",
+    "isin": null,
+    "name": "Rockwell Automation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ROL",
+    "symbol_finnhub": "ROL",
+    "isin": null,
+    "name": "Rollins, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ROP",
+    "symbol_finnhub": "ROP",
+    "isin": null,
+    "name": "Roper Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ROST",
+    "symbol_finnhub": "ROST",
+    "isin": null,
+    "name": "Ross Stores",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "RCL",
+    "symbol_finnhub": "RCL",
+    "isin": null,
+    "name": "Royal Caribbean Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SPGI",
+    "symbol_finnhub": "SPGI",
+    "isin": null,
+    "name": "S&P Global",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "CRM",
+    "symbol_finnhub": "CRM",
+    "isin": null,
+    "name": "Salesforce",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SNDK",
+    "symbol_finnhub": "SNDK",
+    "isin": null,
+    "name": "Sandisk",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SBAC",
+    "symbol_finnhub": "SBAC",
+    "isin": null,
+    "name": "SBA Communications",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SLB",
+    "symbol_finnhub": "SLB",
+    "isin": null,
+    "name": "Schlumberger",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "STX",
+    "symbol_finnhub": "STX",
+    "isin": null,
+    "name": "Seagate Technology",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SRE",
+    "symbol_finnhub": "SRE",
+    "isin": null,
+    "name": "Sempra",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "NOW",
+    "symbol_finnhub": "NOW",
+    "isin": null,
+    "name": "ServiceNow",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SHW",
+    "symbol_finnhub": "SHW",
+    "isin": null,
+    "name": "Sherwin-Williams",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SPG",
+    "symbol_finnhub": "SPG",
+    "isin": null,
+    "name": "Simon Property Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SWKS",
+    "symbol_finnhub": "SWKS",
+    "isin": null,
+    "name": "Skyworks Solutions",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SJM",
+    "symbol_finnhub": "SJM",
+    "isin": null,
+    "name": "J.M. Smucker Company (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SW",
+    "symbol_finnhub": "SW",
+    "isin": null,
+    "name": "Smurfit Westrock",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SNA",
+    "symbol_finnhub": "SNA",
+    "isin": null,
+    "name": "Snap-on",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SOLV",
+    "symbol_finnhub": "SOLV",
+    "isin": null,
+    "name": "Solventum",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SO",
+    "symbol_finnhub": "SO",
+    "isin": null,
+    "name": "Southern Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "LUV",
+    "symbol_finnhub": "LUV",
+    "isin": null,
+    "name": "Southwest Airlines",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SWK",
+    "symbol_finnhub": "SWK",
+    "isin": null,
+    "name": "Stanley Black & Decker",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SBUX",
+    "symbol_finnhub": "SBUX",
+    "isin": null,
+    "name": "Starbucks",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "STT",
+    "symbol_finnhub": "STT",
+    "isin": null,
+    "name": "State Street Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "STLD",
+    "symbol_finnhub": "STLD",
+    "isin": null,
+    "name": "Steel Dynamics",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "STE",
+    "symbol_finnhub": "STE",
+    "isin": null,
+    "name": "Steris",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SYK",
+    "symbol_finnhub": "SYK",
+    "isin": null,
+    "name": "Stryker Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SMCI",
+    "symbol_finnhub": "SMCI",
+    "isin": null,
+    "name": "Supermicro",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SYF",
+    "symbol_finnhub": "SYF",
+    "isin": null,
+    "name": "Synchrony Financial",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SNPS",
+    "symbol_finnhub": "SNPS",
+    "isin": null,
+    "name": "Synopsys",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "SYY",
+    "symbol_finnhub": "SYY",
+    "isin": null,
+    "name": "Sysco",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TMUS",
+    "symbol_finnhub": "TMUS",
+    "isin": null,
+    "name": "T-Mobile US",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TROW",
+    "symbol_finnhub": "TROW",
+    "isin": null,
+    "name": "T. Rowe Price",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TTWO",
+    "symbol_finnhub": "TTWO",
+    "isin": null,
+    "name": "Take-Two Interactive",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TPR",
+    "symbol_finnhub": "TPR",
+    "isin": null,
+    "name": "Tapestry, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TRGP",
+    "symbol_finnhub": "TRGP",
+    "isin": null,
+    "name": "Targa Resources",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TGT",
+    "symbol_finnhub": "TGT",
+    "isin": null,
+    "name": "Target Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TEL",
+    "symbol_finnhub": "TEL",
+    "isin": null,
+    "name": "TE Connectivity",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TDY",
+    "symbol_finnhub": "TDY",
+    "isin": null,
+    "name": "Teledyne Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TER",
+    "symbol_finnhub": "TER",
+    "isin": null,
+    "name": "Teradyne",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TSLA",
+    "symbol_finnhub": "TSLA",
+    "isin": null,
+    "name": "Tesla, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TXN",
+    "symbol_finnhub": "TXN",
+    "isin": null,
+    "name": "Texas Instruments",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TPL",
+    "symbol_finnhub": "TPL",
+    "isin": null,
+    "name": "Texas Pacific Land Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TXT",
+    "symbol_finnhub": "TXT",
+    "isin": null,
+    "name": "Textron",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TMO",
+    "symbol_finnhub": "TMO",
+    "isin": null,
+    "name": "Thermo Fisher Scientific",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TJX",
+    "symbol_finnhub": "TJX",
+    "isin": null,
+    "name": "TJX Companies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TKO",
+    "symbol_finnhub": "TKO",
+    "isin": null,
+    "name": "TKO Group Holdings",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TTD",
+    "symbol_finnhub": "TTD",
+    "isin": null,
+    "name": "Trade Desk (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TSCO",
+    "symbol_finnhub": "TSCO",
+    "isin": null,
+    "name": "Tractor Supply",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TT",
+    "symbol_finnhub": "TT",
+    "isin": null,
+    "name": "Trane Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TDG",
+    "symbol_finnhub": "TDG",
+    "isin": null,
+    "name": "TransDigm Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TRV",
+    "symbol_finnhub": "TRV",
+    "isin": null,
+    "name": "Travelers Companies (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TRMB",
+    "symbol_finnhub": "TRMB",
+    "isin": null,
+    "name": "Trimble Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TFC",
+    "symbol_finnhub": "TFC",
+    "isin": null,
+    "name": "Truist Financial",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TYL",
+    "symbol_finnhub": "TYL",
+    "isin": null,
+    "name": "Tyler Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "TSN",
+    "symbol_finnhub": "TSN",
+    "isin": null,
+    "name": "Tyson Foods",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "USB",
+    "symbol_finnhub": "USB",
+    "isin": null,
+    "name": "U.S. Bancorp",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UBER",
+    "symbol_finnhub": "UBER",
+    "isin": null,
+    "name": "Uber",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UDR",
+    "symbol_finnhub": "UDR",
+    "isin": null,
+    "name": "UDR, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ULTA",
+    "symbol_finnhub": "ULTA",
+    "isin": null,
+    "name": "Ulta Beauty",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UNP",
+    "symbol_finnhub": "UNP",
+    "isin": null,
+    "name": "Union Pacific Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UAL",
+    "symbol_finnhub": "UAL",
+    "isin": null,
+    "name": "United Airlines Holdings",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UPS",
+    "symbol_finnhub": "UPS",
+    "isin": null,
+    "name": "United Parcel Service",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "URI",
+    "symbol_finnhub": "URI",
+    "isin": null,
+    "name": "United Rentals",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UNH",
+    "symbol_finnhub": "UNH",
+    "isin": null,
+    "name": "UnitedHealth Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "UHS",
+    "symbol_finnhub": "UHS",
+    "isin": null,
+    "name": "Universal Health Services",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VLO",
+    "symbol_finnhub": "VLO",
+    "isin": null,
+    "name": "Valero Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VEEV",
+    "symbol_finnhub": "VEEV",
+    "isin": null,
+    "name": "Veeva Systems",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VTR",
+    "symbol_finnhub": "VTR",
+    "isin": null,
+    "name": "Ventas",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VLTO",
+    "symbol_finnhub": "VLTO",
+    "isin": null,
+    "name": "Veralto",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VRSN",
+    "symbol_finnhub": "VRSN",
+    "isin": null,
+    "name": "Verisign",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VRSK",
+    "symbol_finnhub": "VRSK",
+    "isin": null,
+    "name": "Verisk Analytics",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VZ",
+    "symbol_finnhub": "VZ",
+    "isin": null,
+    "name": "Verizon",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VRTX",
+    "symbol_finnhub": "VRTX",
+    "isin": null,
+    "name": "Vertex Pharmaceuticals",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VRT",
+    "symbol_finnhub": "VRT",
+    "isin": null,
+    "name": "Vertiv",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VTRS",
+    "symbol_finnhub": "VTRS",
+    "isin": null,
+    "name": "Viatris",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VICI",
+    "symbol_finnhub": "VICI",
+    "isin": null,
+    "name": "Vici Properties",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "V",
+    "symbol_finnhub": "V",
+    "isin": null,
+    "name": "Visa Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VST",
+    "symbol_finnhub": "VST",
+    "isin": null,
+    "name": "Vistra Corp.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VMRK",
+    "symbol_finnhub": "VMRK",
+    "isin": null,
+    "name": "Vivmark Residential",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "VMC",
+    "symbol_finnhub": "VMC",
+    "isin": null,
+    "name": "Vulcan Materials Company",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Materials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WRB",
+    "symbol_finnhub": "WRB",
+    "isin": null,
+    "name": "W. R. Berkley Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "GWW",
+    "symbol_finnhub": "GWW",
+    "isin": null,
+    "name": "W. W. Grainger",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WAB",
+    "symbol_finnhub": "WAB",
+    "isin": null,
+    "name": "Wabtec",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WMT",
+    "symbol_finnhub": "WMT",
+    "isin": null,
+    "name": "Walmart",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "DIS",
+    "symbol_finnhub": "DIS",
+    "isin": null,
+    "name": "Walt Disney Company (The)",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WBD",
+    "symbol_finnhub": "WBD",
+    "isin": null,
+    "name": "Warner Bros. Discovery",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WM",
+    "symbol_finnhub": "WM",
+    "isin": null,
+    "name": "Waste Management",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WAT",
+    "symbol_finnhub": "WAT",
+    "isin": null,
+    "name": "Waters Corporation",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WEC",
+    "symbol_finnhub": "WEC",
+    "isin": null,
+    "name": "WEC Energy Group",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WFC",
+    "symbol_finnhub": "WFC",
+    "isin": null,
+    "name": "Wells Fargo",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WELL",
+    "symbol_finnhub": "WELL",
+    "isin": null,
+    "name": "Welltower",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WST",
+    "symbol_finnhub": "WST",
+    "isin": null,
+    "name": "West Pharmaceutical Services",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WDC",
+    "symbol_finnhub": "WDC",
+    "isin": null,
+    "name": "Western Digital",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WY",
+    "symbol_finnhub": "WY",
+    "isin": null,
+    "name": "Weyerhaeuser",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Real Estate",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WSM",
+    "symbol_finnhub": "WSM",
+    "isin": null,
+    "name": "Williams-Sonoma, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WMB",
+    "symbol_finnhub": "WMB",
+    "isin": null,
+    "name": "Williams Companies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WTW",
+    "symbol_finnhub": "WTW",
+    "isin": null,
+    "name": "Willis Towers Watson",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WDAY",
+    "symbol_finnhub": "WDAY",
+    "isin": null,
+    "name": "Workday, Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "WYNN",
+    "symbol_finnhub": "WYNN",
+    "isin": null,
+    "name": "Wynn Resorts",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "XEL",
+    "symbol_finnhub": "XEL",
+    "isin": null,
+    "name": "Xcel Energy",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Utilities",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "XYL",
+    "symbol_finnhub": "XYL",
+    "isin": null,
+    "name": "Xylem Inc.",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "YUM",
+    "symbol_finnhub": "YUM",
+    "isin": null,
+    "name": "Yum! Brands",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Consumer Discretionary",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ZBRA",
+    "symbol_finnhub": "ZBRA",
+    "isin": null,
+    "name": "Zebra Technologies",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ZBH",
+    "symbol_finnhub": "ZBH",
+    "isin": null,
+    "name": "Zimmer Biomet",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  },
+  {
+    "symbol_yahoo": "ZTS",
+    "symbol_finnhub": "ZTS",
+    "isin": null,
+    "name": "Zoetis",
+    "exchange": "US",
+    "mic": null,
+    "country": "US",
+    "region": "US",
+    "currency": "USD",
+    "sector": "Health Care",
+    "index_membership": [
+      "SP500"
+    ]
+  }
+]
