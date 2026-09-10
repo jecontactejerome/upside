@@ -44,26 +44,28 @@ as $$
       end as rating_factor
     from base
   )
-  insert into growth_scores
-    (security_id, upside_pct, confidence, momentum, rating_factor, score, computed_at)
-  select
-    security_id,
-    upside_pct,
-    confidence,
-    momentum,
-    rating_factor,
-    upside_pct * (0.4 + 0.6 * confidence) * (1 + momentum) * rating_factor as score,
-    now()
-  from calc
-  on conflict (security_id) do update set
-    upside_pct    = excluded.upside_pct,
-    confidence    = excluded.confidence,
-    momentum      = excluded.momentum,
-    rating_factor = excluded.rating_factor,
-    score         = excluded.score,
-    computed_at   = excluded.computed_at;
-
-  select count(*)::int from calc;
+  upserted as (
+    insert into growth_scores
+      (security_id, upside_pct, confidence, momentum, rating_factor, score, computed_at)
+    select
+      security_id,
+      upside_pct,
+      confidence,
+      momentum,
+      rating_factor,
+      upside_pct * (0.4 + 0.6 * confidence) * (1 + momentum) * rating_factor as score,
+      now()
+    from calc
+    on conflict (security_id) do update set
+      upside_pct    = excluded.upside_pct,
+      confidence    = excluded.confidence,
+      momentum      = excluded.momentum,
+      rating_factor = excluded.rating_factor,
+      score         = excluded.score,
+      computed_at   = excluded.computed_at
+    returning 1
+  )
+  select count(*)::int from upserted;
 $$;
 
 -- ============================================================
