@@ -27,16 +27,7 @@ export default async function handler(req, res) {
 
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_KEY;
-  if (!url || !key) {
-    return res.status(500).json({
-      error: 'Config serveur manquante',
-      debug: {
-        hasUrl: !!url,
-        hasKey: !!key,
-        seen: Object.keys(process.env).filter((k) => /SUPA|VITE|FINN|GEMINI|ALLOWED/.test(k)),
-      },
-    });
-  }
+  if (!url || !key) return res.status(500).json({ error: 'Config serveur manquante' });
   const db = createClient(url, key, { auth: { persistSession: false } });
 
   // déjà connue ?
