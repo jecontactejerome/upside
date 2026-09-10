@@ -17,6 +17,14 @@ const SOURCES = {
 
 const EXCLUDE_NAME = /\b(ETF|ETN|Fund|Trust|Acquisition Corp|SPAC|Warrant|Right|Unit|Preferred|Depositary|Notes?|Bond)\b/i;
 
+// retire le boilerplate de fin de nom ("Apple Inc. Common Stock" -> "Apple Inc.")
+const cleanName = (n) =>
+  (n || '')
+    .replace(/\s*\((?:The|DE|MD|NV|Maryland|Delaware)\)\s*$/i, '')
+    .replace(/\s*-?\s*(Class [ABC]|Cl [ABC])?\s*(Common Stock|Capital Stock|Ordinary Shares?|Common Shares?|Shares of Beneficial Interest|American Depositary Shares?)\s*$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
 const rows = [];
 const seen = new Set();
 
@@ -36,7 +44,7 @@ for (const [exchange, url] of Object.entries(SOURCES)) {
       symbol_yahoo: symbol.replace('.', '-'), // BRK.B -> BRK-B
       symbol_finnhub: symbol.replace('.', '-'),
       isin: null,
-      name: r.name || symbol,
+      name: cleanName(r.name) || symbol,
       exchange,
       mic: null,
       country: 'US',
