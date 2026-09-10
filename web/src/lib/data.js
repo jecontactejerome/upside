@@ -64,33 +64,7 @@ export async function fetchPriceHistory(securityId, days = 90) {
   return data ?? [];
 }
 
-// ---------- Favoris ----------
-let demoFav = new Set();
-
-export async function fetchWatchlist() {
-  if (isDemo()) return [...demoFav].map((id) => ({ security_id: id, note: '' }));
-  const { data, error } = await supabase.from('watchlist').select('security_id, note');
-  if (error) return [];
-  return data ?? [];
-}
-
-export async function toggleWatch(securityId, on) {
-  if (isDemo()) {
-    on ? demoFav.add(securityId) : demoFav.delete(securityId);
-    return { error: null };
-  }
-  if (on) {
-    return supabase.from('watchlist').insert({ security_id: securityId });
-  }
-  return supabase.from('watchlist').delete().eq('security_id', securityId);
-}
-
-export async function saveNote(securityId, note) {
-  if (isDemo()) return { error: null };
-  return supabase.from('watchlist').update({ note }).eq('security_id', securityId);
-}
-
-// ---------- Track (actions détenues) ----------
+// ---------- Actions suivies (onglet News) ----------
 export async function fetchHoldings() {
   if (isDemo()) {
     return [...demoHoldings()]

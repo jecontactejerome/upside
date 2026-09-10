@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import { LineChart, Radar, Newspaper } from 'lucide-react';
+import { LineChart, Newspaper, CalendarDays } from 'lucide-react';
 
 const tabs = [
   { to: '/growth', label: 'Growth', Icon: LineChart },
-  { to: '/track', label: 'Track', Icon: Radar },
   { to: '/news', label: 'News', Icon: Newspaper },
+  { to: '/weekly', label: 'Weekly', Icon: CalendarDays },
 ];
 
 export function TabBar() {

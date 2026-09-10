@@ -2,20 +2,18 @@ import { useEffect, useState } from 'react';
 import { Sheet } from './Sheet.jsx';
 import { TargetRangeBar } from './TargetRangeBar.jsx';
 import { money, pct, relDate, RATING_LABEL } from '../lib/format.js';
-import { fetchNewsForSecurity, fetchPriceHistory, saveNote } from '../lib/data.js';
+import { fetchNewsForSecurity, fetchPriceHistory } from '../lib/data.js';
 import { Sparkline } from './Sparkline.jsx';
 
-export function SecuritySheet({ row, isFav, note, onClose, onNoteSaved }) {
+export function SecuritySheet({ row, onClose }) {
   const [news, setNews] = useState([]);
   const [hist, setHist] = useState([]);
-  const [draft, setDraft] = useState(note ?? '');
 
   useEffect(() => {
     if (!row) return;
-    setDraft(note ?? '');
     fetchNewsForSecurity(row.id, 5).then(setNews);
     fetchPriceHistory(row.id, 120).then((h) => setHist(h.map((p) => p.close)));
-  }, [row, note]);
+  }, [row]);
 
   if (!row) return null;
 
@@ -51,29 +49,6 @@ export function SecuritySheet({ row, isFav, note, onClose, onNoteSaved }) {
         <Row k="Momentum objectif (~30 j)" v={row.momentum != null ? pct(row.momentum, { sign: true }) : '—'} />
         <Row k="Objectif mis à jour" v={relDate(row.target_as_of)} />
       </dl>
-
-      {isFav && (
-        <div style={{ marginTop: 16 }}>
-          <label style={{ fontSize: 13, fontWeight: 600 }}>Ma note</label>
-          <textarea
-            className="field"
-            rows={2}
-            style={{ marginTop: 6, resize: 'none' }}
-            value={draft}
-            onChange={(e) => setDraft(e.target.value)}
-            placeholder="Pourquoi cette valeur m'intéresse…"
-          />
-          <button
-            className="chip"
-            onClick={async () => {
-              await saveNote(row.id, draft);
-              onNoteSaved?.(row.id, draft);
-            }}
-          >
-            Enregistrer la note
-          </button>
-        </div>
-      )}
 
       <h3 style={{ fontSize: 15, fontWeight: 650, margin: '22px 0 4px' }}>Actualité récente</h3>
       {news.length === 0 && <p className="sub" style={{ color: 'var(--text-2)', fontSize: 13 }}>Aucun article pour le moment.</p>}

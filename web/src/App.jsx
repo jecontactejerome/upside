@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { TabBar } from './components/TabBar.jsx';
 import Growth from './routes/Growth.jsx';
-import Track from './routes/Track.jsx';
 import News from './routes/News.jsx';
+import Weekly from './routes/Weekly.jsx';
 import { isDemo } from './lib/demo.js';
 
 export default function App() {
@@ -23,8 +23,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/growth" replace />} />
         <Route path="/growth" element={<Growth />} />
-        <Route path="/track" element={<Track />} />
         <Route path="/news" element={<News />} />
+        <Route path="/weekly" element={<Weekly />} />
+        <Route path="/track" element={<Navigate to="/news" replace />} />
         <Route path="*" element={<Navigate to="/growth" replace />} />
       </Routes>
       <TabBar />

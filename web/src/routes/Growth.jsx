@@ -3,13 +3,7 @@ import { SlidersHorizontal, RefreshCw } from 'lucide-react';
 import { SecurityCard } from '../components/SecurityCard.jsx';
 import { SecuritySheet } from '../components/SecuritySheet.jsx';
 import { FilterSheet } from '../components/FilterSheet.jsx';
-import {
-  fetchGrowth,
-  fetchSectors,
-  fetchWatchlist,
-  toggleWatch,
-  SORTS,
-} from '../lib/data.js';
+import { fetchGrowth, fetchSectors, fetchHoldings, SORTS } from '../lib/data.js';
 
 const DEFAULT_FILTERS = {
   sort: 'score', // classement pondéré (upside x couverture x momentum x note) plutôt que l'upside brut
@@ -20,31 +14,24 @@ const DEFAULT_FILTERS = {
 };
 
 export default function Growth() {
-  const [tab, setTab] = useState('all'); // 'all' | 'fav'
+  const [tab, setTab] = useState('all'); // 'all' | 'mine'
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
   const [rows, setRows] = useState(null);
   const [sectors, setSectors] = useState([]);
-  const [fav, setFav] = useState(new Map()); // security_id -> note
+  const [mineIds, setMineIds] = useState([]); // ids des actions suivies (onglet News)
   const [filterOpen, setFilterOpen] = useState(false);
   const [selected, setSelected] = useState(null);
   const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
     fetchSectors().then(setSectors);
+    fetchHoldings().then((h) => setMineIds(h.map((x) => x.id)));
   }, []);
-
-  const loadFav = useCallback(async () => {
-    const w = await fetchWatchlist();
-    setFav(new Map(w.map((r) => [r.security_id, r.note ?? ''])));
-  }, []);
-  useEffect(() => {
-    loadFav();
-  }, [loadFav]);
 
   const load = useCallback(async () => {
     setRefreshing(true);
     try {
-      const ids = tab === 'fav' ? [...fav.keys()] : null;
+      const ids = tab === 'mine' ? mineIds : null;
       const data = await fetchGrowth({ ...filters, ids });
       setRows(data);
     } catch (e) {
@@ -53,24 +40,11 @@ export default function Growth() {
     } finally {
       setRefreshing(false);
     }
-  }, [filters, tab, fav]);
+  }, [filters, tab, mineIds]);
 
   useEffect(() => {
     load();
   }, [load]);
-
-  const onToggleFav = async (row) => {
-    const on = !fav.has(row.id);
-    const next = new Map(fav);
-    if (on) next.set(row.id, '');
-    else next.delete(row.id);
-    setFav(next);
-    const { error } = await toggleWatch(row.id, on);
-    if (error) {
-      console.error(error);
-      loadFav(); // resync en cas d'échec
-    }
-  };
 
   const activeFilterCount = useMemo(() => {
     let n = 0;
@@ -87,10 +61,10 @@ export default function Growth() {
 
       <div className="segmented">
         <button aria-selected={tab === 'all'} onClick={() => setTab('all')}>
-          Tous
+          Toutes
         </button>
-        <button aria-selected={tab === 'fav'} onClick={() => setTab('fav')}>
-          Favoris{fav.size ? ` (${fav.size})` : ''}
+        <button aria-selected={tab === 'mine'} onClick={() => setTab('mine')}>
+          Mes actions{mineIds.length ? ` (${mineIds.length})` : ''}
         </button>
       </div>
 
@@ -110,22 +84,14 @@ export default function Growth() {
 
       {rows && rows.length === 0 && (
         <p className="empty">
-          {tab === 'fav'
-            ? 'Aucun favori pour l’instant. Touchez l’étoile sur une valeur pour l’ajouter.'
+          {tab === 'mine'
+            ? 'Aucune de tes actions suivies n’a d’objectif analystes pour l’instant. Ajoute-les dans l’onglet News.'
             : 'Aucune valeur ne correspond à ces filtres.'}
         </p>
       )}
 
       {rows &&
-        rows.map((row) => (
-          <SecurityCard
-            key={row.id}
-            row={row}
-            isFav={fav.has(row.id)}
-            onToggleFav={onToggleFav}
-            onOpen={setSelected}
-          />
-        ))}
+        rows.map((row) => <SecurityCard key={row.id} row={row} onOpen={setSelected} />)}
 
       <FilterSheet
         open={filterOpen}
@@ -135,13 +101,7 @@ export default function Growth() {
         sectors={sectors}
       />
 
-      <SecuritySheet
-        row={selected}
-        isFav={selected ? fav.has(selected.id) : false}
-        note={selected ? fav.get(selected.id) : ''}
-        onClose={() => setSelected(null)}
-        onNoteSaved={(id, note) => setFav((m) => new Map(m).set(id, note))}
-      />
+      <SecuritySheet row={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }

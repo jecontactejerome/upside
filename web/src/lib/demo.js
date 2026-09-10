@@ -102,7 +102,7 @@ export const DEMO_WEEKLY_DIGEST = {
     { title: 'Airbus : plus fort écart au consensus', detail: 'À 196 €, le titre affiche +17,6 % de potentiel vs l’objectif moyen (231 €) sur 23 analystes.' },
     { title: 'Révisions d’objectifs', detail: 'Aucune révision majeure sur vos positions cette semaine ; le momentum reste stable.' },
     { title: 'Actu de vos positions', detail: 'Nvidia dévoile une nouvelle génération de puces IA · Airbus relève ses cadences de production sur l’A320.' },
-    { title: 'Rappel méthode', detail: 'Le brief se concentre sur les actions de l’onglet Track. Ceci n’est pas un conseil en investissement.' },
+    { title: 'Rappel méthode', detail: 'Le brief se concentre sur les actions de l’onglet News. Ceci n’est pas un conseil en investissement.' },
   ],
 };
 

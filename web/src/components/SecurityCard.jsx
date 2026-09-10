@@ -1,23 +1,12 @@
-import { Star } from 'lucide-react';
 import { money, pct } from '../lib/format.js';
 import { Sparkline } from './Sparkline.jsx';
 
-export function SecurityCard({ row, spark = [], isFav, onToggleFav, onOpen }) {
+export function SecurityCard({ row, spark = [], onOpen }) {
   const line = spark.length >= 2 ? spark : row._spark ?? [];
   const upsideNeg = (row.upside_pct ?? 0) < 0;
   return (
     <div className="card" onClick={() => onOpen(row)} role="button" tabIndex={0}>
       <div className="card-row">
-        <button
-          className={`star ${isFav ? 'on' : ''}`}
-          aria-label={isFav ? 'Retirer des favoris' : 'Ajouter aux favoris'}
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleFav(row);
-          }}
-        >
-          <Star size={19} fill={isFav ? 'currentColor' : 'none'} strokeWidth={2} />
-        </button>
         <div className="idcol">
           <div className="name">{row.name}</div>
           <div className="sub">

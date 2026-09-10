@@ -1,6 +1,6 @@
 // Alimente `news_articles` pour :
 //   - les valeurs les plus "bankable" (top N par growth_scores.score) -> brief hebdo
-//   - toutes les actions détenues (table holdings)                    -> onglet Track
+//   - toutes les actions détenues (table holdings)                    -> onglet News
 // Sources : Finnhub company-news + RSS Yahoo. Cadence cible : toutes les 2 h.
 import { db, upsertBatched } from './lib/supabase.mjs';
 import { companyNews } from './lib/finnhub.mjs';
