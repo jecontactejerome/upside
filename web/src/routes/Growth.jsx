@@ -12,10 +12,10 @@ import {
 } from '../lib/data.js';
 
 const DEFAULT_FILTERS = {
-  sort: 'upside',
+  sort: 'score', // classement pondéré (upside x couverture x momentum x note) plutôt que l'upside brut
   region: null,
   sector: null,
-  minAnalysts: 3,
+  minAnalysts: 6, // écarte les valeurs trop peu suivies (paris spéculatifs)
   hideDownside: true,
 };
 
