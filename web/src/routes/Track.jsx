@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { NewsItem } from '../components/NewsItem.jsx';
 import { AddSearch } from '../components/AddSearch.jsx';
@@ -10,13 +9,8 @@ import {
   addHolding,
   removeHolding,
 } from '../lib/data.js';
-import { useAuth } from '../lib/useAuth.js';
-import { isDemo } from '../lib/demo.js';
 
 export default function Track() {
-  const { user } = useAuth();
-  const gated = !user && !isDemo();
-
   const [holdings, setHoldings] = useState(null);
   const [news, setNews] = useState(null);
   const [manageOpen, setManageOpen] = useState(false);
@@ -31,14 +25,14 @@ export default function Track() {
   }, [reloadNews]);
 
   useEffect(() => {
-    if (!gated) reload();
-  }, [gated, reload]);
+    reload();
+  }, [reload]);
 
   const heldIds = new Set((holdings ?? []).map((h) => h.id));
 
   async function add(sec) {
     setHoldings((h) => [{ ...sec, added_at: new Date().toISOString() }, ...(h ?? [])]);
-    await addHolding(sec.id, user?.id);
+    await addHolding(sec.id);
     reloadNews();
   }
 
@@ -46,19 +40,6 @@ export default function Track() {
     setHoldings((h) => (h ?? []).filter((x) => x.id !== id));
     await removeHolding(id);
     reloadNews();
-  }
-
-  if (gated) {
-    return (
-      <div className="screen">
-        <h1 className="screen-title">Track</h1>
-        <p className="empty">
-          Connecte-toi pour suivre l’actu des actions que tu détiens.
-          <br />
-          <Link to="/login" style={{ color: 'var(--accent)', fontWeight: 600 }}>Se connecter</Link>
-        </p>
-      </div>
-    );
   }
 
   const count = holdings?.length ?? 0;

@@ -137,23 +137,20 @@ create table if not exists weekly_digest (
 
 -- ============================================================
 --  watchlist — favoris "à surveiller" (onglet Growth)
+--  App mono-utilisateur sans login : liste unique (voir 0003_no_auth.sql).
 -- ============================================================
 create table if not exists watchlist (
-  user_id      uuid not null references auth.users(id) on delete cascade,
-  security_id  uuid not null references securities(id) on delete cascade,
+  security_id  uuid primary key references securities(id) on delete cascade,
   note         text,
-  created_at   timestamptz not null default now(),
-  primary key (user_id, security_id)
+  created_at   timestamptz not null default now()
 );
 
 -- ============================================================
 --  holdings — actions réellement détenues (onglet Track)
 -- ============================================================
 create table if not exists holdings (
-  user_id      uuid not null references auth.users(id) on delete cascade,
-  security_id  uuid not null references securities(id) on delete cascade,
-  created_at   timestamptz not null default now(),
-  primary key (user_id, security_id)
+  security_id  uuid primary key references securities(id) on delete cascade,
+  created_at   timestamptz not null default now()
 );
 
 -- ============================================================
@@ -221,30 +218,12 @@ begin
   end loop;
 end $$;
 
--- Favoris : uniquement l'utilisateur propriétaire ET l'email autorisé.
-drop policy if exists "own_watchlist_select" on watchlist;
-create policy "own_watchlist_select" on watchlist for select
-  using (user_id = auth.uid()
-         and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com');
+-- Favoris (watchlist) et Track (holdings) : app perso mono-utilisateur, sans login.
+-- Lecture + écriture ouvertes avec la clé publique. Données non confidentielles.
+drop policy if exists "anon_all" on watchlist;
+create policy "anon_all" on watchlist for all using (true) with check (true);
 
-drop policy if exists "own_watchlist_write" on watchlist;
-create policy "own_watchlist_write" on watchlist for all
-  using (user_id = auth.uid()
-         and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com')
-  with check (user_id = auth.uid()
-              and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com');
-
--- Track : mêmes règles que les favoris.
-drop policy if exists "own_holdings_select" on holdings;
-create policy "own_holdings_select" on holdings for select
-  using (user_id = auth.uid()
-         and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com');
-
-drop policy if exists "own_holdings_write" on holdings;
-create policy "own_holdings_write" on holdings for all
-  using (user_id = auth.uid()
-         and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com')
-  with check (user_id = auth.uid()
-              and auth.jwt() ->> 'email' = 'jecontactejerome@gmail.com');
+drop policy if exists "anon_all" on holdings;
+create policy "anon_all" on holdings for all using (true) with check (true);
 
 -- L'ingestion utilise la clé service_role, qui contourne la RLS : rien à ajouter.

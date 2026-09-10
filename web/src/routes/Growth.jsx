@@ -10,9 +10,6 @@ import {
   toggleWatch,
   SORTS,
 } from '../lib/data.js';
-import { useAuth } from '../lib/useAuth.js';
-import { isDemo } from '../lib/demo.js';
-import { useNavigate } from 'react-router-dom';
 
 const DEFAULT_FILTERS = {
   sort: 'upside',
@@ -23,9 +20,6 @@ const DEFAULT_FILTERS = {
 };
 
 export default function Growth() {
-  const { user } = useAuth();
-  const navigate = useNavigate();
-
   const [tab, setTab] = useState('all'); // 'all' | 'fav'
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
   const [rows, setRows] = useState(null);
@@ -66,16 +60,15 @@ export default function Growth() {
   }, [load]);
 
   const onToggleFav = async (row) => {
-    if (!user && !isDemo()) return navigate('/login');
     const on = !fav.has(row.id);
     const next = new Map(fav);
     if (on) next.set(row.id, '');
     else next.delete(row.id);
     setFav(next);
-    const { error } = await toggleWatch(row.id, on, user.id);
+    const { error } = await toggleWatch(row.id, on);
     if (error) {
       console.error(error);
-      loadFav(); // resync en cas d'échec RLS
+      loadFav(); // resync en cas d'échec
     }
   };
 

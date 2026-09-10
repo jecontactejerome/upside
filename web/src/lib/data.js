@@ -74,13 +74,13 @@ export async function fetchWatchlist() {
   return data ?? [];
 }
 
-export async function toggleWatch(securityId, on, userId) {
+export async function toggleWatch(securityId, on) {
   if (isDemo()) {
     on ? demoFav.add(securityId) : demoFav.delete(securityId);
     return { error: null };
   }
   if (on) {
-    return supabase.from('watchlist').insert({ security_id: securityId, user_id: userId });
+    return supabase.from('watchlist').insert({ security_id: securityId });
   }
   return supabase.from('watchlist').delete().eq('security_id', securityId);
 }
@@ -123,12 +123,12 @@ export async function searchSecurities(query, limit = 8) {
   return data ?? [];
 }
 
-export async function addHolding(securityId, userId) {
+export async function addHolding(securityId) {
   if (isDemo()) {
     demoHoldings().add(securityId);
     return { error: null };
   }
-  return supabase.from('holdings').insert({ security_id: securityId, user_id: userId });
+  return supabase.from('holdings').insert({ security_id: securityId });
 }
 
 export async function removeHolding(securityId) {

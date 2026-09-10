@@ -3,12 +3,9 @@ import { TabBar } from './components/TabBar.jsx';
 import Growth from './routes/Growth.jsx';
 import Track from './routes/Track.jsx';
 import News from './routes/News.jsx';
-import Login from './routes/Login.jsx';
-import { useAuth } from './lib/useAuth.js';
 import { isDemo } from './lib/demo.js';
 
 export default function App() {
-  const { loading } = useAuth();
   const demo = isDemo();
 
   return (
@@ -28,10 +25,9 @@ export default function App() {
         <Route path="/growth" element={<Growth />} />
         <Route path="/track" element={<Track />} />
         <Route path="/news" element={<News />} />
-        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/growth" replace />} />
       </Routes>
-      {!loading && <TabBar />}
+      <TabBar />
       <p className="disclaimer">
         Données analystes agrégées (Yahoo Finance, Finnhub), potentiellement différées.
         Upside n’est pas un conseil en investissement.
