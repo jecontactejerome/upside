@@ -21,11 +21,13 @@ const { data: held } = await db.from('holdings').select('security_id');
 const holdingIds = (held || []).map((h) => h.security_id);
 const scoped = holdingIds.length > 0;
 
+// NB : la vue growth_feed expose la colonne `id` (= securities.id), pas `security_id`.
 let feedQuery = db
   .from('growth_feed')
-  .select('security_id, name, symbol_yahoo, upside_pct, num_analysts, recommendation_key, momentum, score');
-if (scoped) feedQuery = feedQuery.in('security_id', holdingIds);
-const { data: feed } = await feedQuery;
+  .select('id, name, symbol_yahoo, upside_pct, num_analysts, recommendation_key, momentum, score');
+if (scoped) feedQuery = feedQuery.in('id', holdingIds);
+const { data: feed, error: feedErr } = await feedQuery;
+if (feedErr) console.warn(`growth_feed: ${feedErr.message}`);
 
 const movers = [...(feed || [])].sort((a, b) => (b.score ?? -9) - (a.score ?? -9)).slice(0, 8);
 const revisions = [...(feed || [])].sort((a, b) => (b.momentum ?? -9) - (a.momentum ?? -9)).slice(0, 5);
