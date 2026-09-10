@@ -80,22 +80,57 @@ export default async function handler(req, res) {
     if (upserted.error) return res.status(500).json({ error: upserted.error.message });
     sec = upserted.data;
 
-    // cotation immédiate (best effort, sans bloquer)
+    const nowIso = new Date().toISOString();
+
+    // cotation immédiate (best effort)
     await db.from('quotes').upsert(
       {
         security_id: sec.id,
         price,
         currency,
         change_pct_day: q.regularMarketChangePercent ?? null,
-        as_of: new Date().toISOString(),
+        as_of: nowIso,
         source: 'yahoo',
       },
       { onConflict: 'security_id' },
     );
+
+    // objectif analystes immédiat (pour que la valeur apparaisse aussi dans Growth)
+    try {
+      const s = await yf.quoteSummary(symbol, { modules: ['financialData'] });
+      const fd = s.financialData || {};
+      if (fd.targetMeanPrice != null) {
+        await db.from('price_targets').upsert(
+          {
+            security_id: sec.id,
+            target_mean: fd.targetMeanPrice ?? null,
+            target_high: fd.targetHighPrice ?? null,
+            target_low: fd.targetLowPrice ?? null,
+            target_median: fd.targetMedianPrice ?? null,
+            num_analysts: fd.numberOfAnalystOpinions ?? null,
+            recommendation_mean: fd.recommendationMean ?? null,
+            recommendation_key: fd.recommendationKey ?? null,
+            currency: fd.financialCurrency || currency,
+            as_of: nowIso,
+            source: 'yahoo',
+          },
+          { onConflict: 'security_id' },
+        );
+        await db.from('target_revisions').upsert(
+          { security_id: sec.id, captured_at: nowIso, target_mean: fd.targetMeanPrice, num_analysts: fd.numberOfAnalystOpinions ?? null },
+          { onConflict: 'security_id,captured_at' },
+        );
+      }
+    } catch {
+      /* pas d'objectif dispo : la valeur restera hors classement Growth */
+    }
   }
 
   const added = await db.from('holdings').upsert({ security_id: sec.id }, { onConflict: 'security_id' });
   if (added.error) return res.status(500).json({ error: added.error.message });
+
+  // recalcule les scores pour que la nouvelle valeur soit classée dans Growth
+  await db.rpc('recompute_growth_scores');
 
   return res.status(200).json({ security: sec });
 }
