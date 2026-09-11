@@ -24,6 +24,7 @@ export async function fetchGrowth({
   minAnalysts = 3,
   hideDownside = true,
   momentumPositive = false,
+  buyPctMin = null,
   ids = null,
 } = {}) {
   const s = SORT_COLS[sort] || SORT_COLS.upside;
@@ -34,6 +35,7 @@ export async function fetchGrowth({
     if (minAnalysts) rows = rows.filter((r) => (r.num_analysts ?? 0) >= minAnalysts);
     if (hideDownside) rows = rows.filter((r) => r.upside_pct > 0);
     if (momentumPositive) rows = rows.filter((r) => (r.momentum ?? 0) > 0);
+    if (buyPctMin) rows = rows.filter((r) => (r.buy_pct ?? 0) >= buyPctMin);
     if (ids) rows = rows.filter((r) => ids.includes(r.id));
     rows.sort((a, b) => (s.ascending ? a[s.column] - b[s.column] : b[s.column] - a[s.column]));
     return rows;
@@ -44,6 +46,7 @@ export async function fetchGrowth({
   if (minAnalysts) q = q.gte('num_analysts', minAnalysts);
   if (hideDownside) q = q.gt('upside_pct', 0);
   if (momentumPositive) q = q.gt('momentum', 0);
+  if (buyPctMin) q = q.gte('buy_pct', buyPctMin);
   if (ids) q = q.in('id', ids.length ? ids : ['00000000-0000-0000-0000-000000000000']);
   q = q.order(s.column, { ascending: s.ascending ?? false, nullsFirst: false }).limit(300);
   const { data, error } = await q;

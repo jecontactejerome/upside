@@ -4,7 +4,7 @@ import { SecurityCard } from '../components/SecurityCard.jsx';
 import { SecuritySheet } from '../components/SecuritySheet.jsx';
 import { FilterSheet } from '../components/FilterSheet.jsx';
 import { fetchGrowth, fetchHoldings, SORTS } from '../lib/data.js';
-import { sectorInfo } from '../lib/sectors.js';
+import { sectorInfo, aiExposureFlag } from '../lib/sectors.js';
 
 const DEFAULT_FILTERS = {
   sort: 'upside',
@@ -14,8 +14,14 @@ const DEFAULT_FILTERS = {
   hideDownside: true,
 };
 
-// Raccourci "Sélection" : valeurs solides et en dynamique haussière.
-const QUICK = { sort: 'score', minAnalysts: 11, hideDownside: true, momentumPositive: true };
+// Raccourci "Sélection" : au moins 10 analystes, >80 % d'avis Achat, servi
+// côté serveur. Croissance CA/résultat + exposition IA filtrés côté client
+// (voir lib/sectors.js pour le détail éditorial de l'exposition IA).
+const QUICK = { sort: 'score', minAnalysts: 10, hideDownside: true, buyPctMin: 0.8 };
+
+function isDurableGrowth(row) {
+  return (row.revenue_growth ?? 0) > 0 && (row.earnings_growth == null || row.earnings_growth > 0);
+}
 
 export default function Growth() {
   const [tab, setTab] = useState('all'); // 'all' | 'mine'
@@ -41,6 +47,9 @@ export default function Growth() {
       let data = await fetchGrowth({ ...base, ids });
       if (filters.sector) {
         data = data.filter((r) => sectorInfo(r)?.label === filters.sector);
+      }
+      if (quick) {
+        data = data.filter((r) => isDurableGrowth(r) && !aiExposureFlag(r));
       }
       setRows(data);
     } catch (e) {
@@ -87,7 +96,7 @@ export default function Growth() {
           className={`chip icon ${quick ? 'active' : ''}`}
           onClick={() => setQuick((v) => !v)}
           aria-pressed={quick}
-          title="Sélection : > 10 analystes et objectif en hausse sur 30 j"
+          title="Sélection : ≥10 analystes, >80 % d'avis Achat, croissance CA/résultat, hors secteurs très exposés à l'IA"
         >
           <Sparkles size={15} />
         </button>
@@ -99,8 +108,8 @@ export default function Growth() {
 
       {quick && (
         <p className="quick-note">
-          Sélection : plus de 10 analystes et objectif de cours relevé sur les 30 derniers jours,
-          triée par score.
+          Sélection : au moins 10 analystes, plus de 80 % d'avis « Achat », chiffre d'affaires et
+          résultat en croissance, hors secteurs très exposés à l'IA — triée par score.
         </p>
       )}
 

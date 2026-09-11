@@ -87,6 +87,24 @@ export const SECTOR_LABELS = [
   'Services publics',
 ];
 
+// Secteurs dont la rentabilité nous semble la plus directement exposée à l'IA
+// générative (automatisation de tâches cœur de métier). Liste éditoriale, à
+// affiner à la main — ce n'est pas un calcul, juste un filtre de prudence pour
+// la Sélection (✨).
+const AI_EXPOSURE_RULES = [
+  /staffing|outsourc|business process|call cent|customer service|telemarketing/,
+  /translation|transcription|data entry|market research/,
+  /publishing|advertis|copywrit/,
+  /it services|consulting|information technology services/,
+  /paralegal|legal services|bookkeeping|tax preparation/,
+];
+
+export function aiExposureFlag(row) {
+  const ind = (row?.industry || '').toLowerCase();
+  const sec = (row?.sector || '').toLowerCase();
+  return AI_EXPOSURE_RULES.some((re) => re.test(ind) || re.test(sec));
+}
+
 export function sectorInfo(row) {
   const ind = (row?.industry || '').toLowerCase();
   const sec = (row?.sector || '').toLowerCase();

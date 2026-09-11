@@ -33,11 +33,29 @@ export async function targetFor(symbol) {
       recommendation_mean: num(fd.recommendationMean),
       recommendation_key: fd.recommendationKey || null,
       currency: fd.financialCurrency || px.currency || null,
+      buy_pct: buyPctFrom(s.recommendationTrend),
+      revenue_growth: num(fd.revenueGrowth),
+      earnings_growth: num(fd.earningsGrowth),
     };
   } catch (err) {
     console.warn(`  yahoo.quoteSummary ${symbol}: ${err.message}`);
     return null;
   }
+}
+
+// % d'analystes qui recommandent Achat (strongBuy + buy) sur la période la plus récente.
+function buyPctFrom(trend) {
+  const rows = trend?.trend;
+  if (!Array.isArray(rows) || !rows.length) return null;
+  const cur = rows.find((r) => r.period === '0m') || rows[0];
+  const strongBuy = int(cur.strongBuy) ?? 0;
+  const buy = int(cur.buy) ?? 0;
+  const hold = int(cur.hold) ?? 0;
+  const sell = int(cur.sell) ?? 0;
+  const strongSell = int(cur.strongSell) ?? 0;
+  const total = strongBuy + buy + hold + sell + strongSell;
+  if (!total) return null;
+  return (strongBuy + buy) / total;
 }
 
 // Flux RSS Yahoo Finance par ticker (titres d'actu, gratuit, illimité).
