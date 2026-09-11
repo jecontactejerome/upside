@@ -20,7 +20,10 @@ const DEFAULT_FILTERS = {
 const QUICK = { sort: 'score', minAnalysts: 10, hideDownside: true, buyPctMin: 0.8 };
 
 function isDurableGrowth(row) {
-  return (row.revenue_growth ?? 0) > 0 && (row.earnings_growth == null || row.earnings_growth > 0);
+  // earnings_growth doit être réellement connu ET positif (pas de passe-droit sur
+  // l'absence de donnée) : sinon les biotechs pré-rentables et les valeurs en
+  // difficulté (revenu en hausse mais résultat toujours dans le rouge) passaient.
+  return (row.revenue_growth ?? 0) > 0 && (row.earnings_growth ?? -1) > 0;
 }
 
 export default function Growth() {
