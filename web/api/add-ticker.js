@@ -16,6 +16,16 @@ const yf = new YahooFinance({
 
 const EU_CURRENCIES = ['EUR', 'GBP', 'GBp', 'CHF', 'SEK', 'DKK', 'NOK', 'ISK', 'PLN', 'CZK'];
 
+// % d'analystes qui recommandent Achat (strongBuy + buy) sur la période la plus récente.
+function buyPctFrom(trend) {
+  const rows = trend?.trend;
+  if (!Array.isArray(rows) || !rows.length) return null;
+  const cur = rows.find((r) => r.period === '0m') || rows[0];
+  const total = (cur.strongBuy || 0) + (cur.buy || 0) + (cur.hold || 0) + (cur.sell || 0) + (cur.strongSell || 0);
+  if (!total) return null;
+  return ((cur.strongBuy || 0) + (cur.buy || 0)) / total;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Méthode non autorisée' });
 
@@ -58,6 +68,17 @@ export default async function handler(req, res) {
         ? 'US'
         : 'OTHER';
 
+    // secteur / industrie (pour l'étiquette sur les cartes Growth) — best effort
+    let sector = null;
+    let industry = null;
+    try {
+      const ap = await yf.quoteSummary(symbol, { modules: ['assetProfile'] });
+      sector = ap.assetProfile?.sector || null;
+      industry = ap.assetProfile?.industry || null;
+    } catch {
+      /* pas de profil dispo : pas d'étiquette secteur, ce n'est pas bloquant */
+    }
+
     const upserted = await db
       .from('securities')
       .upsert(
@@ -68,6 +89,8 @@ export default async function handler(req, res) {
           exchange: q.fullExchangeName || null,
           region,
           currency,
+          sector,
+          industry,
           index_membership: [],
           active: true,
           updated_at: new Date().toISOString(),
@@ -97,7 +120,7 @@ export default async function handler(req, res) {
 
     // objectif analystes immédiat (pour que la valeur apparaisse aussi dans Growth)
     try {
-      const s = await yf.quoteSummary(symbol, { modules: ['financialData'] });
+      const s = await yf.quoteSummary(symbol, { modules: ['financialData', 'recommendationTrend'] });
       const fd = s.financialData || {};
       if (fd.targetMeanPrice != null) {
         await db.from('price_targets').upsert(
@@ -110,6 +133,9 @@ export default async function handler(req, res) {
             num_analysts: fd.numberOfAnalystOpinions ?? null,
             recommendation_mean: fd.recommendationMean ?? null,
             recommendation_key: fd.recommendationKey ?? null,
+            buy_pct: buyPctFrom(s.recommendationTrend),
+            revenue_growth: fd.revenueGrowth ?? null,
+            earnings_growth: fd.earningsGrowth ?? null,
             currency: fd.financialCurrency || currency,
             as_of: nowIso,
             source: 'yahoo',
