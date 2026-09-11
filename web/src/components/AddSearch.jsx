@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Plus, Search, Loader2 } from 'lucide-react';
-import { searchSecurities } from '../lib/data.js';
+import { searchSecurities, searchTickerApi } from '../lib/data.js';
 import { isDemo } from '../lib/demo.js';
 
 // Champ de recherche + liste de résultats pour ajouter une action.
@@ -10,6 +10,8 @@ export function AddSearch({ heldIds, onAdd, onAddByTicker, autoFocus = false }) 
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [searching, setSearching] = useState(false);
+  const [yahooResults, setYahooResults] = useState([]);
+  const [yahooSearching, setYahooSearching] = useState(false);
   const [adding, setAdding] = useState(false);
   const [err, setErr] = useState('');
   const debounce = useRef();
@@ -24,13 +26,25 @@ export function AddSearch({ heldIds, onAdd, onAddByTicker, autoFocus = false }) 
     setErr('');
     if (query.trim().length < 2) {
       setResults([]);
+      setYahooResults([]);
       setSearching(false);
+      setYahooSearching(false);
       return;
     }
     setSearching(true);
     debounce.current = setTimeout(async () => {
-      setResults(await searchSecurities(query));
+      const local = await searchSecurities(query);
+      setResults(local);
       setSearching(false);
+      // rien en base locale : on cherche par nom d'entreprise côté Yahoo
+      // (utile pour les valeurs hors univers dont on ne connaît pas le ticker)
+      if (!isDemo() && onAddByTicker && local.length === 0) {
+        setYahooSearching(true);
+        setYahooResults(await searchTickerApi(query));
+        setYahooSearching(false);
+      } else {
+        setYahooResults([]);
+      }
     }, 220);
     return () => clearTimeout(debounce.current);
   }, [query]);
@@ -41,20 +55,22 @@ export function AddSearch({ heldIds, onAdd, onAddByTicker, autoFocus = false }) 
     onAdd(sec);
   }
 
-  async function pickTicker() {
-    const sym = query.trim();
+  async function addSymbol(sym) {
     setAdding(true);
     setErr('');
     try {
       await onAddByTicker(sym);
       setQuery('');
       setResults([]);
+      setYahooResults([]);
     } catch (e) {
       setErr(e.message || 'Impossible d’ajouter ce ticker');
     } finally {
       setAdding(false);
     }
   }
+
+  const pickTicker = () => addSymbol(query.trim());
 
   const q = query.trim();
   const showTickerRow =
@@ -73,7 +89,8 @@ export function AddSearch({ heldIds, onAdd, onAddByTicker, autoFocus = false }) 
           autoCapitalize="off"
         />
       </div>
-      {(results.length > 0 || searching || showTickerRow || err) && q.length >= 1 && (
+      {(results.length > 0 || searching || showTickerRow || err || yahooResults.length > 0 || yahooSearching) &&
+        q.length >= 1 && (
         <div className="search-results">
           {searching && <div className="search-row muted">Recherche…</div>}
 
@@ -89,6 +106,18 @@ export function AddSearch({ heldIds, onAdd, onAddByTicker, autoFocus = false }) 
               </button>
             );
           })}
+
+          {yahooSearching && <div className="search-row muted">Recherche Yahoo Finance…</div>}
+
+          {yahooResults.map((y) => (
+            <button key={y.symbol} className="search-row" disabled={adding} onClick={() => addSymbol(y.symbol)}>
+              <span>
+                <strong>{y.name}</strong>
+                <span className="muted"> · {y.symbol} · {y.exchange}</span>
+              </span>
+              {adding ? <Loader2 size={16} className="spin" /> : <Plus size={16} />}
+            </button>
+          ))}
 
           {showTickerRow && (
             <button className="search-row" disabled={adding} onClick={pickTicker}>

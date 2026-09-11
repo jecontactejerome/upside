@@ -36,7 +36,7 @@ export function NewsItem({ article }) {
     <a className="news-item" href={article.url} target="_blank" rel="noreferrer">
       <StockLogo symbol={sec?.symbol_yahoo} name={sec?.name} />
       <div>
-        <div className="headline">{article.headline}</div>
+        <div className="headline">{article.headline_fr || article.headline}</div>
         <div className="meta">
           {sec?.name ? `${sec.name} · ` : ''}
           {article.source} · {relDate(article.published_at)}

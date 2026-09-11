@@ -84,6 +84,14 @@ export async function fetchHoldings() {
   return (data ?? []).map((r) => ({ ...r.securities, added_at: r.created_at }));
 }
 
+// Recherche par nom d'entreprise hors univers (via Yahoo), quand searchSecurities
+// ne trouve rien dans la base locale — utile pour les valeurs pas encore suivies.
+export async function searchTickerApi(query) {
+  const res = await fetch(`/api/search-ticker?q=${encodeURIComponent(query)}`);
+  const json = await res.json().catch(() => ({ results: [] }));
+  return json.results || [];
+}
+
 export async function searchSecurities(query, limit = 8) {
   const q = query.trim();
   if (q.length < 2) return [];
@@ -140,7 +148,8 @@ export async function fetchHoldingsNews(limit = 60) {
   if (!ids.length) return [];
   const { data, error } = await supabase
     .from('news_articles')
-    .select('id, headline, url, source, image_url, published_at, security_id, securities(name, symbol_yahoo)')
+    .select('id, headline, headline_fr, url, source, image_url, published_at, security_id, securities(name, symbol_yahoo)')
+    .eq('featured', true)
     .in('security_id', ids)
     .order('published_at', { ascending: false })
     .limit(limit);

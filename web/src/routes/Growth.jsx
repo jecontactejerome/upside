@@ -10,7 +10,7 @@ const DEFAULT_FILTERS = {
   sort: 'upside',
   region: null,
   sector: null, // libellé de bucket (voir lib/sectors.js), filtré côté client
-  minAnalysts: 6,
+  minAnalysts: 10,
   hideDownside: true,
 };
 

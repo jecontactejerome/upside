@@ -2,10 +2,13 @@
 //   - les valeurs les plus "bankable" (top N par growth_scores.score) -> brief hebdo
 //   - toutes les actions détenues (table holdings)                    -> onglet News
 // Sources : Finnhub company-news + RSS Yahoo. Cadence cible : toutes les 2 h.
+// L'onglet News n'affiche qu'un article "vedette" par action et par jour (le plus
+// récent), traduit en français via Gemini — moins de bruit, plus lisible.
 import { db, upsertBatched } from './lib/supabase.mjs';
 import { companyNews } from './lib/finnhub.mjs';
 import { rssUrlFor } from './lib/yahoo.mjs';
 import { runPool } from './lib/throttle.mjs';
+import { GEMINI_API_KEY } from './lib/env.mjs';
 
 const TOP_N = 25;
 
@@ -96,7 +99,78 @@ for (const list of perSec) {
   }
 }
 
+// --- élit l'article "vedette" du jour par action (le plus récent) ---
+const byDay = new Map(); // `${security_id}|${jour}` -> ligne la plus récente
+for (const r of rows) {
+  if (!r.security_id) continue;
+  const day = (r.published_at || '').slice(0, 10);
+  const k = `${r.security_id}|${day}`;
+  const cur = byDay.get(k);
+  if (!cur || r.published_at > cur.published_at) byDay.set(k, r);
+}
+
+const toFeature = [];
+for (const [k, cand] of byDay) {
+  const [securityId, day] = k.split('|');
+  const { data: existing } = await db
+    .from('news_articles')
+    .select('id, published_at')
+    .eq('security_id', securityId)
+    .eq('featured', true)
+    .gte('published_at', `${day}T00:00:00Z`)
+    .lt('published_at', `${day}T23:59:59.999Z`)
+    .maybeSingle();
+  if (existing && existing.published_at >= cand.published_at) continue; // déjà à jour
+  if (existing) await db.from('news_articles').update({ featured: false }).eq('id', existing.id);
+  toFeature.push(cand);
+}
+
+if (toFeature.length) {
+  const translated = await translateHeadlines(toFeature.map((f) => f.headline));
+  toFeature.forEach((f, i) => {
+    f.featured = true;
+    f.headline_fr = translated?.[i] || f.headline;
+  });
+}
+
 const n = await upsertBatched('news_articles', rows, { onConflict: 'url' });
 const { data: pruned } = await db.rpc('prune_old_news');
-console.log(`✓ news_articles: ${n} lignes upsert — ${pruned ?? 0} anciens articles purgés`);
+console.log(
+  `✓ news_articles: ${n} lignes upsert — ${toFeature.length} vedettes du jour — ${pruned ?? 0} anciens articles purgés`,
+);
 process.exit(0);
+
+// ============================================================
+async function translateHeadlines(headlines) {
+  if (!GEMINI_API_KEY || !headlines.length) return null;
+  const model = 'gemini-flash-lite-latest';
+  const prompt = [
+    "Traduis ces titres d'articles financiers en français, de façon concise et naturelle",
+    '(pas de traduction mot à mot). Réponds UNIQUEMENT par un tableau JSON de chaînes,',
+    'exactement dans le même ordre et la même longueur que la liste fournie.',
+    '',
+    JSON.stringify(headlines),
+  ].join('\n');
+  try {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.2, responseMimeType: 'application/json' },
+        }),
+      },
+    );
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const txt = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    const arr = JSON.parse(txt);
+    if (!Array.isArray(arr) || arr.length !== headlines.length) return null;
+    return arr.map((s) => String(s || '').slice(0, 400));
+  } catch (err) {
+    console.warn(`  traduction Gemini: ${err.message}`);
+    return null;
+  }
+}
