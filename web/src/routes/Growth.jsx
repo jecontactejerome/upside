@@ -126,7 +126,10 @@ export default function Growth() {
         </p>
       )}
 
-      {rows && rows.map((row) => <SecurityCard key={row.id} row={row} onOpen={setSelected} />)}
+      {rows &&
+        rows.map((row) => (
+          <SecurityCard key={row.id} row={row} onOpen={setSelected} watch={tab === 'mine'} />
+        ))}
 
       <FilterSheet
         open={filterOpen}

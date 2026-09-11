@@ -15,6 +15,8 @@
   --down: #c7362f;    /* rouge désaturé */
   --up-bg: #e7f4ea;
   --down-bg: #fbeae9;
+  --warn: #b26b00;    /* orange désaturé */
+  --warn-bg: #faf0e0;
 
   --radius: 18px;
   --radius-sm: 12px;
@@ -205,6 +207,20 @@ button { font-family: inherit; }
 }
 .mom-up { color: var(--up); background: var(--up-bg); }
 .mom-down { color: var(--down); background: var(--down-bg); }
+
+.watch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 640;
+  letter-spacing: -0.01em;
+  border-radius: 7px;
+  padding: 3px 8px 3px 6px;
+  white-space: nowrap;
+}
+.watch-danger { color: var(--down); background: var(--down-bg); }
+.watch-warn { color: var(--warn); background: var(--warn-bg); }
 
 .star {
   border: 0;
