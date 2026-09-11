@@ -133,10 +133,19 @@ if (toFeature.length) {
   });
 }
 
-const n = await upsertBatched('news_articles', rows, { onConflict: 'url' });
+// upsert en 2 lots aux clés homogènes : un lot dont les objets JS n'ont pas les
+// clés featured/headline_fr enverrait NULL pour ces colonnes s'il était mélangé
+// avec le lot qui les a (Supabase/PostgREST unifie les colonnes du batch), ce qui
+// viole la contrainte NOT NULL sur featured et écraserait les vedettes déjà en base.
+const featuredUrls = new Set(toFeature.map((f) => f.url));
+const plainRows = rows.filter((r) => !featuredUrls.has(r.url));
+const featuredRows = rows.filter((r) => featuredUrls.has(r.url));
+
+const n1 = await upsertBatched('news_articles', plainRows, { onConflict: 'url' });
+const n2 = featuredRows.length ? await upsertBatched('news_articles', featuredRows, { onConflict: 'url' }) : 0;
 const { data: pruned } = await db.rpc('prune_old_news');
 console.log(
-  `✓ news_articles: ${n} lignes upsert — ${toFeature.length} vedettes du jour — ${pruned ?? 0} anciens articles purgés`,
+  `✓ news_articles: ${n1 + n2} lignes upsert — ${toFeature.length} vedettes du jour — ${pruned ?? 0} anciens articles purgés`,
 );
 process.exit(0);
 

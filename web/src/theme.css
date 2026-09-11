@@ -160,7 +160,7 @@ button { font-family: inherit; }
 .card-row { display: flex; align-items: center; gap: 10px; }
 .card .idcol { min-width: 0; flex: 1; }
 .card .name {
-  font-size: 16px; font-weight: 640; letter-spacing: -0.01em;
+  font-size: 17px; font-weight: 660; letter-spacing: -0.01em;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .card .sub {
@@ -169,24 +169,37 @@ button { font-family: inherit; }
 }
 .card .spacer { flex: 1; }
 
+/* prix du jour : relégué en info secondaire (voir .meta-price dans card-meta) */
 .price { font-size: 16px; font-weight: 640; text-align: right; white-space: nowrap; flex-shrink: 0; }
 .price .delta { font-size: 12px; font-weight: 560; margin-top: 2px; }
 .delta.pos { color: var(--up); }
 .delta.neg { color: var(--down); }
 
+/* potentiel de hausse : la métrique principale de la carte */
 .upside-badge {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 3px;
-  background: var(--up-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
   color: var(--up);
-  border-radius: 9px;
-  padding: 4px 8px;
-  font-size: 14px;
-  font-weight: 680;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: right;
+  flex-shrink: 0;
 }
-.upside-badge.neg { background: var(--down-bg); color: var(--down); }
-.upside-badge small { font-size: 10px; font-weight: 600; opacity: 0.8; }
+.upside-badge.neg { color: var(--down); }
+.upside-badge small { font-size: 11px; font-weight: 560; color: var(--text-2); }
+
+.meta-price {
+  font-size: 12.5px;
+  font-weight: 560;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.delta-sm { margin-left: 3px; font-weight: 640; }
+.delta-sm.pos { color: var(--up); }
+.delta-sm.neg { color: var(--down); }
 
 /* ligne secteur + momentum sous la carte */
 .card-meta { margin-top: 11px; gap: 7px; }

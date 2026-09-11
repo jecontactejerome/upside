@@ -37,17 +37,21 @@ export function SecurityCard({ row, spark = [], onOpen, watch = false }) {
           </div>
         </div>
         {line.length >= 2 && <Sparkline points={line} />}
-        <div className="price num">
-          {money(row.price, row.currency)}
-          {row.change_pct_day != null && (
-            <div className={`delta ${row.change_pct_day >= 0 ? 'pos' : 'neg'}`}>
-              {pct(row.change_pct_day / 100, { sign: true })}
-            </div>
-          )}
-        </div>
+        <span className={`upside-badge num ${upsideNeg ? 'neg' : ''}`}>
+          {pct(row.upside_pct, { sign: true })}
+          <small>vs objectif {money(row.target_mean, row.currency)}</small>
+        </span>
       </div>
 
       <div className="card-row card-meta">
+        <span className="meta-price num">
+          {money(row.price, row.currency)}
+          {row.change_pct_day != null && (
+            <span className={`delta-sm ${row.change_pct_day >= 0 ? 'pos' : 'neg'}`}>
+              {pct(row.change_pct_day / 100, { sign: true })}
+            </span>
+          )}
+        </span>
         {sec && (
           <span className="sector-chip" style={{ background: sec.bg, color: sec.fg }}>
             {sec.label}
@@ -69,11 +73,6 @@ export function SecurityCard({ row, spark = [], onOpen, watch = false }) {
             {watchInfo.label}
           </span>
         )}
-        <div style={{ flex: 1 }} />
-        <span className={`upside-badge num ${upsideNeg ? 'neg' : ''}`}>
-          {pct(row.upside_pct, { sign: true })}
-          <small>vs objectif {money(row.target_mean, row.currency)}</small>
-        </span>
       </div>
     </div>
   );
